@@ -263,7 +263,9 @@ strong{ font-weight:600; color:var(--ivory); }
   margin-top:3rem; align-items:start; }
 .prose{ font-size:1.12rem; line-height:1.8; color:var(--ivory-dim); max-width:68ch; }
 .prose h2,.prose h3{ margin-top:2.2rem; }
-.prose p:first-of-type::first-letter{ font-family:var(--disp); float:left; font-size:4.1rem;
+/* Drop cap only on long-form sermon transcripts — on short page intros a 3-line
+   cap leaves the next paragraph wrapping awkwardly beside it. */
+.sermon-body .prose p:first-of-type::first-letter{ font-family:var(--disp); float:left; font-size:4.1rem;
   line-height:.8; padding:.08em .12em 0 0; color:var(--brass); font-weight:500; }
 .prose blockquote{ border-left:2px solid var(--brass); margin:1.8rem 0; padding:.2rem 0 .2rem 1.4rem;
   font-family:var(--disp); font-style:italic; font-size:1.25rem; color:var(--ivory); }
