@@ -89,11 +89,15 @@
     var playBtn = it.audio
       ? '<button class="play" aria-label="Play" data-audio="' + esc(it.audio) + '" data-title="' + esc(it.passage) + '" data-sub="' + esc((it.service || '') + ' · ' + d) + '">' + svgPlay() + '</button>'
       : '';
+    var sid = it.archive_id || it.id;
+    var heartBtn = sid
+      ? '<button class="heart" data-heart data-sermon="' + esc(sid) + '" data-passage="' + esc(it.passage || it.title) + '" aria-label="Save to favorites" aria-pressed="false"><svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg></button>'
+      : '';
     return '<article class="scard reveal in">' +
         '<div class="top">' + bookTag + '<span class="date">' + esc(d) + '</span></div>' +
         '<h3 class="passage"><a href="' + esc(it.permalink) + '">' + esc(it.passage || it.title) + '</a></h3>' +
         (it.excerpt ? '<p class="excerpt">' + esc(it.excerpt) + '</p>' : '') +
-        '<div class="foot"><span class="svc">' + esc(it.service || '') + '</span>' + playBtn + '</div>' +
+        '<div class="foot"><span class="svc">' + esc(it.service || '') + '</span><div class="card-actions">' + heartBtn + playBtn + '</div></div>' +
       '</article>';
   }
 

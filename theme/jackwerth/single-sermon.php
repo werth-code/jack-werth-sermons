@@ -8,6 +8,7 @@ while ( have_posts() ) : the_post();
 	$book     = jw_meta( 'book' );
 	$speaker  = jw_meta( 'speaker' ) ?: 'Jack Werth';
 	$audio    = jw_audio_url( $id );
+	$arid     = jw_meta( 'archive_id' );
 	$book_term= get_the_terms( $id, 'bible_book' );
 	$book_link= ( $book_term && ! is_wp_error( $book_term ) ) ? get_term_link( $book_term[0] ) : '';
 	$product  = (int) jw_meta( 'product_id' );
@@ -44,6 +45,15 @@ while ( have_posts() ) : the_post();
 			</div>
 			<h1><?php echo esc_html( $passage ); ?></h1>
 			<div class="byline">Preached by <?php echo esc_html( $speaker ); ?></div>
+			<?php if ( $arid ) : ?>
+			<div class="sermon-save">
+				<button class="heart" data-heart data-sermon="<?php echo esc_attr( $arid ); ?>"
+					data-passage="<?php echo esc_attr( $passage ); ?>" aria-label="Save to favorites" aria-pressed="false">
+					<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+				</button>
+				<span class="smallcaps">Save to favorites</span>
+			</div>
+			<?php endif; ?>
 		</div>
 
 		<?php if ( $audio ) : ?>

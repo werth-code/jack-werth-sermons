@@ -6,7 +6,8 @@
 	<script>document.documentElement.className += ' js';</script>
 	<title>Jonah &#8211; Jack Werth — Expository Sermons</title>
 <meta name='robots' content='max-image-preview:large' />
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="preconnect" href="https://archive.org"><link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="preconnect" href="https://archive.org"><link rel='dns-prefetch' href='//cdn.jsdelivr.net' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
 <link rel="alternate" type="application/rss+xml" title="Jack Werth — Expository Sermons &raquo; Feed" href="https://werth-code.github.io/jack-werth-sermons/feed/" />
 <link rel="alternate" type="application/rss+xml" title="Jack Werth — Expository Sermons &raquo; Comments Feed" href="https://werth-code.github.io/jack-werth-sermons/comments/feed/" />
 <link rel="alternate" type="application/rss+xml" title="Jack Werth — Expository Sermons &raquo; Jonah Book Feed" href="https://werth-code.github.io/jack-werth-sermons/book/jonah/feed/" />
@@ -52,7 +53,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 </style>
 
 <link rel='stylesheet' id='jw-fonts-css' href='https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&#038;family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..600&#038;family=JetBrains+Mono:wght@400;500&#038;display=swap' media='all' />
-<link rel='stylesheet' id='jw-main-css' href='https://werth-code.github.io/jack-werth-sermons/wp-content/themes/jackwerth/assets/css/main.css?ver=1.0.9' media='all' />
+<link rel='stylesheet' id='jw-main-css' href='https://werth-code.github.io/jack-werth-sermons/wp-content/themes/jackwerth/assets/css/main.css?ver=1.1.0' media='all' />
 <link rel="https://api.w.org/" href="https://werth-code.github.io/jack-werth-sermons/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://werth-code.github.io/jack-werth-sermons/wp-json/wp/v2/bible_book/19" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://werth-code.github.io/jack-werth-sermons/xmlrpc.php?rsd" />
 <meta name="generator" content="WordPress 7.0" />
 </head>
@@ -72,6 +73,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 
 		<nav class="nav" data-nav aria-label="Primary">
 			<a href="https://werth-code.github.io/jack-werth-sermons/">Home</a><a href="https://werth-code.github.io/jack-werth-sermons/sermons/">Sermons</a><a href="https://werth-code.github.io/jack-werth-sermons/books/">Books</a><a href="https://werth-code.github.io/jack-werth-sermons/for-pastors/">For Pastors</a><a href="https://werth-code.github.io/jack-werth-sermons/about/">About</a>			<a class="nav-cta" href="https://werth-code.github.io/jack-werth-sermons/sermons/">Search the Library →</a>
+			<div data-account></div>
 		</nav>
 	</div>
 </header>
@@ -113,14 +115,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Bible Study</span>
-				<button class="play" aria-label="Play Jonah 1:4"
-			data-audio="https://archive.org/download/2018.07.15.XJonah1.4JackWerth/2018.07.15.X%20Jonah%201.4%20-%20Jack%20Werth.mp3"
-			data-title="Jonah 1:4"
-			data-sub="Bible Study · July 15, 2018">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2018.07.15.XJonah1.4JackWerth"
+				data-passage="Jonah 1:4" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Jonah 1:4"
+				data-audio="https://archive.org/download/2018.07.15.XJonah1.4JackWerth/2018.07.15.X%20Jonah%201.4%20-%20Jack%20Werth.mp3"
+				data-title="Jonah 1:4"
+				data-sub="Bible Study · July 15, 2018">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -134,14 +142,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Bible Study</span>
-				<button class="play" aria-label="Play Jonah 1:6"
-			data-audio="https://archive.org/download/2018.07.29.XJonah1.6JackWerth/2018.07.29.X%20Jonah%201.6%20-%20Jack%20Werth.mp3"
-			data-title="Jonah 1:6"
-			data-sub="Bible Study · July 29, 2018">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2018.07.29.XJonah1.6JackWerth"
+				data-passage="Jonah 1:6" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Jonah 1:6"
+				data-audio="https://archive.org/download/2018.07.29.XJonah1.6JackWerth/2018.07.29.X%20Jonah%201.6%20-%20Jack%20Werth.mp3"
+				data-title="Jonah 1:6"
+				data-sub="Bible Study · July 29, 2018">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -155,14 +169,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Bible Study</span>
-				<button class="play" aria-label="Play Jonah 1:7"
-			data-audio="https://archive.org/download/2018.08.05.XJonah1.7JackWerth/2018.08.05.X%20Jonah%201.7%20-%20Jack%20Werth.mp3"
-			data-title="Jonah 1:7"
-			data-sub="Bible Study · August 5, 2018">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2018.08.05.XJonah1.7JackWerth"
+				data-passage="Jonah 1:7" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Jonah 1:7"
+				data-audio="https://archive.org/download/2018.08.05.XJonah1.7JackWerth/2018.08.05.X%20Jonah%201.7%20-%20Jack%20Werth.mp3"
+				data-title="Jonah 1:7"
+				data-sub="Bible Study · August 5, 2018">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -176,14 +196,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Bible Study</span>
-				<button class="play" aria-label="Play Jonah 1:8-10"
-			data-audio="https://archive.org/download/2018.08.12.XJonah1.810JackWerth/2018.08.12.X%20Jonah%201.8-10%20-%20Jack%20Werth.mp3"
-			data-title="Jonah 1:8-10"
-			data-sub="Bible Study · August 12, 2018">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2018.08.12.XJonah1.810JackWerth"
+				data-passage="Jonah 1:8-10" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Jonah 1:8-10"
+				data-audio="https://archive.org/download/2018.08.12.XJonah1.810JackWerth/2018.08.12.X%20Jonah%201.8-10%20-%20Jack%20Werth.mp3"
+				data-title="Jonah 1:8-10"
+				data-sub="Bible Study · August 12, 2018">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -197,14 +223,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Bible Study</span>
-				<button class="play" aria-label="Play Jonah 1:11-17"
-			data-audio="https://archive.org/download/2018.08.19.XJonah1.1117JackWerth/2018.08.19.X%20Jonah%201.11-17%20-%20Jack%20Werth.mp3"
-			data-title="Jonah 1:11-17"
-			data-sub="Bible Study · August 19, 2018">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2018.08.19.XJonah1.1117JackWerth"
+				data-passage="Jonah 1:11-17" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Jonah 1:11-17"
+				data-audio="https://archive.org/download/2018.08.19.XJonah1.1117JackWerth/2018.08.19.X%20Jonah%201.11-17%20-%20Jack%20Werth.mp3"
+				data-title="Jonah 1:11-17"
+				data-sub="Bible Study · August 19, 2018">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -218,14 +250,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Bible Study</span>
-				<button class="play" aria-label="Play Jonah 1:17-2.1"
-			data-audio="https://archive.org/download/2018.08.26.XJonah1.172.1JackWerth/2018.08.26.X%20Jonah%201.17-2.1%20-%20Jack%20Werth.mp3"
-			data-title="Jonah 1:17-2.1"
-			data-sub="Bible Study · August 26, 2018">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2018.08.26.XJonah1.172.1JackWerth"
+				data-passage="Jonah 1:17-2.1" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Jonah 1:17-2.1"
+				data-audio="https://archive.org/download/2018.08.26.XJonah1.172.1JackWerth/2018.08.26.X%20Jonah%201.17-2.1%20-%20Jack%20Werth.mp3"
+				data-title="Jonah 1:17-2.1"
+				data-sub="Bible Study · August 26, 2018">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -239,14 +277,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Bible Study</span>
-				<button class="play" aria-label="Play Jonah 1:17-2.10"
-			data-audio="https://archive.org/download/2018.09.16.XJonah1.172.10JackWerth/2018.09.16.X%20Jonah%201.17-2.10%20-%20Jack%20Werth.mp3"
-			data-title="Jonah 1:17-2.10"
-			data-sub="Bible Study · September 16, 2018">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2018.09.16.XJonah1.172.10JackWerth"
+				data-passage="Jonah 1:17-2.10" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Jonah 1:17-2.10"
+				data-audio="https://archive.org/download/2018.09.16.XJonah1.172.10JackWerth/2018.09.16.X%20Jonah%201.17-2.10%20-%20Jack%20Werth.mp3"
+				data-title="Jonah 1:17-2.10"
+				data-sub="Bible Study · September 16, 2018">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -260,14 +304,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Bible Study</span>
-				<button class="play" aria-label="Play Jonah 3:1-3a"
-			data-audio="https://archive.org/download/2018.09.23.XJonah3.13aJackWerth/2018.09.23.X%20Jonah%203.1-3a%20-%20Jack%20Werth.mp3"
-			data-title="Jonah 3:1-3a"
-			data-sub="Bible Study · September 23, 2018">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2018.09.23.XJonah3.13aJackWerth"
+				data-passage="Jonah 3:1-3a" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Jonah 3:1-3a"
+				data-audio="https://archive.org/download/2018.09.23.XJonah3.13aJackWerth/2018.09.23.X%20Jonah%203.1-3a%20-%20Jack%20Werth.mp3"
+				data-title="Jonah 3:1-3a"
+				data-sub="Bible Study · September 23, 2018">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -281,14 +331,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Bible Study</span>
-				<button class="play" aria-label="Play Jonah 3:3-5"
-			data-audio="https://archive.org/download/2018.10.07.XJonah3.35JackWerth/2018.10.07.X%20Jonah%203.3-5%20-%20Jack%20Werth.mp3"
-			data-title="Jonah 3:3-5"
-			data-sub="Bible Study · October 7, 2018">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2018.10.07.XJonah3.35JackWerth"
+				data-passage="Jonah 3:3-5" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Jonah 3:3-5"
+				data-audio="https://archive.org/download/2018.10.07.XJonah3.35JackWerth/2018.10.07.X%20Jonah%203.3-5%20-%20Jack%20Werth.mp3"
+				data-title="Jonah 3:3-5"
+				data-sub="Bible Study · October 7, 2018">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -302,14 +358,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Bible Study</span>
-				<button class="play" aria-label="Play Jonah 3:5-7"
-			data-audio="https://archive.org/download/2018.10.14.XJonah3.57JackWerth/2018.10.14.X%20Jonah%203.5-7%20-%20Jack%20Werth.mp3"
-			data-title="Jonah 3:5-7"
-			data-sub="Bible Study · October 14, 2018">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2018.10.14.XJonah3.57JackWerth"
+				data-passage="Jonah 3:5-7" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Jonah 3:5-7"
+				data-audio="https://archive.org/download/2018.10.14.XJonah3.57JackWerth/2018.10.14.X%20Jonah%203.5-7%20-%20Jack%20Werth.mp3"
+				data-title="Jonah 3:5-7"
+				data-sub="Bible Study · October 14, 2018">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -323,14 +385,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Bible Study</span>
-				<button class="play" aria-label="Play Jonah 3:9-10"
-			data-audio="https://archive.org/download/2018.10.21.XJonah3.910JackWerth/2018.10.21.X%20Jonah%203.9-10%20-%20Jack%20Werth.mp3"
-			data-title="Jonah 3:9-10"
-			data-sub="Bible Study · October 21, 2018">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2018.10.21.XJonah3.910JackWerth"
+				data-passage="Jonah 3:9-10" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Jonah 3:9-10"
+				data-audio="https://archive.org/download/2018.10.21.XJonah3.910JackWerth/2018.10.21.X%20Jonah%203.9-10%20-%20Jack%20Werth.mp3"
+				data-title="Jonah 3:9-10"
+				data-sub="Bible Study · October 21, 2018">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -344,14 +412,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Bible Study</span>
-				<button class="play" aria-label="Play Jonah 3:10-4.5"
-			data-audio="https://archive.org/download/2018.11.04.XJonah3.104.5JackWerth/2018.11.04.X%20Jonah%203.10-4.5%20-%20Jack%20Werth.mp3"
-			data-title="Jonah 3:10-4.5"
-			data-sub="Bible Study · November 4, 2018">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2018.11.04.XJonah3.104.5JackWerth"
+				data-passage="Jonah 3:10-4.5" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Jonah 3:10-4.5"
+				data-audio="https://archive.org/download/2018.11.04.XJonah3.104.5JackWerth/2018.11.04.X%20Jonah%203.10-4.5%20-%20Jack%20Werth.mp3"
+				data-title="Jonah 3:10-4.5"
+				data-sub="Bible Study · November 4, 2018">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -365,14 +439,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Bible Study</span>
-				<button class="play" aria-label="Play Jonah 4:5-8"
-			data-audio="https://archive.org/download/2018.11.11.XJonah4.58JackWerth/2018.11.11.X%20Jonah%204.5-8%20-%20Jack%20Werth.mp3"
-			data-title="Jonah 4:5-8"
-			data-sub="Bible Study · November 11, 2018">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2018.11.11.XJonah4.58JackWerth"
+				data-passage="Jonah 4:5-8" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Jonah 4:5-8"
+				data-audio="https://archive.org/download/2018.11.11.XJonah4.58JackWerth/2018.11.11.X%20Jonah%204.5-8%20-%20Jack%20Werth.mp3"
+				data-title="Jonah 4:5-8"
+				data-sub="Bible Study · November 11, 2018">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -386,14 +466,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Bible Study</span>
-				<button class="play" aria-label="Play Jonah 4:9-11"
-			data-audio="https://archive.org/download/2018.11.18.XJonah4.911JackWerth/2018.11.18.X%20Jonah%204.9-11%20-%20Jack%20Werth.mp3"
-			data-title="Jonah 4:9-11"
-			data-sub="Bible Study · November 18, 2018">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2018.11.18.XJonah4.911JackWerth"
+				data-passage="Jonah 4:9-11" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Jonah 4:9-11"
+				data-audio="https://archive.org/download/2018.11.18.XJonah4.911JackWerth/2018.11.18.X%20Jonah%204.9-11%20-%20Jack%20Werth.mp3"
+				data-title="Jonah 4:9-11"
+				data-sub="Bible Study · November 18, 2018">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 		</div>
 		<div class="pagination"></div>
@@ -443,8 +529,15 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 var JW = {"index":"https://werth-code.github.io/jack-werth-sermons/sermons-index.json","archive":"https://werth-code.github.io/jack-werth-sermons/sermons/"};
 //# sourceURL=jw-app-js-extra
 </script>
-<script id="jw-app-js" src="https://werth-code.github.io/jack-werth-sermons/wp-content/themes/jackwerth/assets/js/app.js?ver=1.0.9"></script>
-<script id="jw-player-js" src="https://werth-code.github.io/jack-werth-sermons/wp-content/themes/jackwerth/assets/js/player.js?ver=1.0.9"></script>
+<script id="jw-app-js" src="https://werth-code.github.io/jack-werth-sermons/wp-content/themes/jackwerth/assets/js/app.js?ver=1.1.0"></script>
+<script id="jw-player-js" src="https://werth-code.github.io/jack-werth-sermons/wp-content/themes/jackwerth/assets/js/player.js?ver=1.1.0"></script>
+<script id="supabase-js-js" src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script id="jw-config-js" src="https://werth-code.github.io/jack-werth-sermons/wp-content/themes/jackwerth/assets/js/jw-config.js?ver=1.1.0"></script>
+<script id="jw-config-js-after">
+window.JW_HOME="https:\/\/werth-code.github.io\/jack-werth-sermons\/";
+//# sourceURL=jw-config-js-after
+</script>
+<script id="jw-account-js" src="https://werth-code.github.io/jack-werth-sermons/wp-content/themes/jackwerth/assets/js/account.js?ver=1.1.0"></script>
 <script id="wp-emoji-settings" type="application/json">
 {"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"https://werth-code.github.io/jack-werth-sermons/wp-includes/js/wp-emoji-release.min.js?ver=7.0"}}
 </script>

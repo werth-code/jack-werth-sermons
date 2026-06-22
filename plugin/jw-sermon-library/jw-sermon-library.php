@@ -224,9 +224,10 @@ add_action( 'rest_api_init', function () {
 			$items = [];
 			foreach ( $query->posts as $p ) {
 				$items[] = [
-					'id'       => $p->ID,
-					'title'    => get_the_title( $p ),
-					'permalink'=> get_permalink( $p ),
+					'id'        => $p->ID,
+					'archive_id'=> get_post_meta( $p->ID, '_jw_archive_id', true ),
+					'title'     => get_the_title( $p ),
+					'permalink' => get_permalink( $p ),
 					'passage'  => get_post_meta( $p->ID, '_jw_passage', true ),
 					'book'     => get_post_meta( $p->ID, '_jw_book', true ),
 					'date'     => get_post_meta( $p->ID, '_jw_date', true ),

@@ -6,7 +6,8 @@
 	<script>document.documentElement.className += ' js';</script>
 	<title>Titus &#8211; Jack Werth — Expository Sermons</title>
 <meta name='robots' content='max-image-preview:large' />
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="preconnect" href="https://archive.org"><link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="preconnect" href="https://archive.org"><link rel='dns-prefetch' href='//cdn.jsdelivr.net' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
 <link rel="alternate" type="application/rss+xml" title="Jack Werth — Expository Sermons &raquo; Feed" href="https://werth-code.github.io/jack-werth-sermons/feed/" />
 <link rel="alternate" type="application/rss+xml" title="Jack Werth — Expository Sermons &raquo; Comments Feed" href="https://werth-code.github.io/jack-werth-sermons/comments/feed/" />
 <link rel="alternate" type="application/rss+xml" title="Jack Werth — Expository Sermons &raquo; Titus Book Feed" href="https://werth-code.github.io/jack-werth-sermons/book/titus/feed/" />
@@ -52,7 +53,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 </style>
 
 <link rel='stylesheet' id='jw-fonts-css' href='https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&#038;family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..600&#038;family=JetBrains+Mono:wght@400;500&#038;display=swap' media='all' />
-<link rel='stylesheet' id='jw-main-css' href='https://werth-code.github.io/jack-werth-sermons/wp-content/themes/jackwerth/assets/css/main.css?ver=1.0.9' media='all' />
+<link rel='stylesheet' id='jw-main-css' href='https://werth-code.github.io/jack-werth-sermons/wp-content/themes/jackwerth/assets/css/main.css?ver=1.1.0' media='all' />
 <link rel="https://api.w.org/" href="https://werth-code.github.io/jack-werth-sermons/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://werth-code.github.io/jack-werth-sermons/wp-json/wp/v2/bible_book/17" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://werth-code.github.io/jack-werth-sermons/xmlrpc.php?rsd" />
 <meta name="generator" content="WordPress 7.0" />
 </head>
@@ -72,6 +73,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 
 		<nav class="nav" data-nav aria-label="Primary">
 			<a href="https://werth-code.github.io/jack-werth-sermons/">Home</a><a href="https://werth-code.github.io/jack-werth-sermons/sermons/">Sermons</a><a href="https://werth-code.github.io/jack-werth-sermons/books/">Books</a><a href="https://werth-code.github.io/jack-werth-sermons/for-pastors/">For Pastors</a><a href="https://werth-code.github.io/jack-werth-sermons/about/">About</a>			<a class="nav-cta" href="https://werth-code.github.io/jack-werth-sermons/sermons/">Search the Library →</a>
+			<div data-account></div>
 		</nav>
 	</div>
 </header>
@@ -113,14 +115,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Titus 1:1"
-			data-audio="https://archive.org/download/2017.11.12.ETitus1.15JackWerth/2017.11.12.E%20Titus%201.1-5%20-%20Jack%20Werth.mp3"
-			data-title="Titus 1:1"
-			data-sub="Evening Service · November 12, 2017">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2017.11.12.ETitus1.15JackWerth"
+				data-passage="Titus 1:1" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Titus 1:1"
+				data-audio="https://archive.org/download/2017.11.12.ETitus1.15JackWerth/2017.11.12.E%20Titus%201.1-5%20-%20Jack%20Werth.mp3"
+				data-title="Titus 1:1"
+				data-sub="Evening Service · November 12, 2017">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -134,14 +142,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Titus 1:1"
-			data-audio="https://archive.org/download/2017.11.19.ETitus1.1JackWerth/2017.11.19.E%20Titus%201.1%20-%20Jack%20Werth.mp3"
-			data-title="Titus 1:1"
-			data-sub="Evening Service · November 19, 2017">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2017.11.19.ETitus1.1JackWerth"
+				data-passage="Titus 1:1" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Titus 1:1"
+				data-audio="https://archive.org/download/2017.11.19.ETitus1.1JackWerth/2017.11.19.E%20Titus%201.1%20-%20Jack%20Werth.mp3"
+				data-title="Titus 1:1"
+				data-sub="Evening Service · November 19, 2017">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -155,14 +169,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Titus 1:1"
-			data-audio="https://archive.org/download/2017.12.03.ETitus1.1JackWerth/2017.12.03.E%20Titus%201.1%20-%20Jack%20Werth.mp3"
-			data-title="Titus 1:1"
-			data-sub="Evening Service · December 3, 2017">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2017.12.03.ETitus1.1JackWerth"
+				data-passage="Titus 1:1" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Titus 1:1"
+				data-audio="https://archive.org/download/2017.12.03.ETitus1.1JackWerth/2017.12.03.E%20Titus%201.1%20-%20Jack%20Werth.mp3"
+				data-title="Titus 1:1"
+				data-sub="Evening Service · December 3, 2017">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -176,14 +196,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Titus 1:1"
-			data-audio="https://archive.org/download/2017.12.10.ETitus1.1JackWerth/2017.12.10.E%20Titus%201.1%20-%20Jack%20Werth.mp3"
-			data-title="Titus 1:1"
-			data-sub="Evening Service · December 10, 2017">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2017.12.10.ETitus1.1JackWerth"
+				data-passage="Titus 1:1" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Titus 1:1"
+				data-audio="https://archive.org/download/2017.12.10.ETitus1.1JackWerth/2017.12.10.E%20Titus%201.1%20-%20Jack%20Werth.mp3"
+				data-title="Titus 1:1"
+				data-sub="Evening Service · December 10, 2017">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -197,14 +223,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Titus 1:2"
-			data-audio="https://archive.org/download/2017.12.17.ETitus1.2JackWerth/2017.12.17.E%20Titus%201.2%20-%20Jack%20Werth.mp3"
-			data-title="Titus 1:2"
-			data-sub="Evening Service · December 17, 2017">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2017.12.17.ETitus1.2JackWerth"
+				data-passage="Titus 1:2" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Titus 1:2"
+				data-audio="https://archive.org/download/2017.12.17.ETitus1.2JackWerth/2017.12.17.E%20Titus%201.2%20-%20Jack%20Werth.mp3"
+				data-title="Titus 1:2"
+				data-sub="Evening Service · December 17, 2017">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -218,14 +250,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Titus 1:3"
-			data-audio="https://archive.org/download/2017.12.24.ETitus1.3JackWerth/2017.12.24.E%20Titus%201.3%20-%20Jack%20Werth.mp3"
-			data-title="Titus 1:3"
-			data-sub="Evening Service · December 24, 2017">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2017.12.24.ETitus1.3JackWerth"
+				data-passage="Titus 1:3" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Titus 1:3"
+				data-audio="https://archive.org/download/2017.12.24.ETitus1.3JackWerth/2017.12.24.E%20Titus%201.3%20-%20Jack%20Werth.mp3"
+				data-title="Titus 1:3"
+				data-sub="Evening Service · December 24, 2017">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -239,14 +277,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Titus 1:3"
-			data-audio="https://archive.org/download/2017.12.31.ETitus1.3JackWerth/2017.12.31.E%20Titus%201.3%20-%20Jack%20Werth.mp3"
-			data-title="Titus 1:3"
-			data-sub="Evening Service · December 31, 2017">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2017.12.31.ETitus1.3JackWerth"
+				data-passage="Titus 1:3" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Titus 1:3"
+				data-audio="https://archive.org/download/2017.12.31.ETitus1.3JackWerth/2017.12.31.E%20Titus%201.3%20-%20Jack%20Werth.mp3"
+				data-title="Titus 1:3"
+				data-sub="Evening Service · December 31, 2017">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -260,14 +304,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Titus 1:4a"
-			data-audio="https://archive.org/download/2018.01.07.ETitus1.4aJackWerth/2018.01.07.E%20Titus%201.4a%20-%20Jack%20Werth.mp3"
-			data-title="Titus 1:4a"
-			data-sub="Evening Service · January 7, 2018">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2018.01.07.ETitus1.4aJackWerth"
+				data-passage="Titus 1:4a" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Titus 1:4a"
+				data-audio="https://archive.org/download/2018.01.07.ETitus1.4aJackWerth/2018.01.07.E%20Titus%201.4a%20-%20Jack%20Werth.mp3"
+				data-title="Titus 1:4a"
+				data-sub="Evening Service · January 7, 2018">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -281,14 +331,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Titus 1:4b"
-			data-audio="https://archive.org/download/2018.01.21.ETitus1.4bJackWerth/2018.01.21.E%20Titus%201.4b%20-%20Jack%20Werth.mp3"
-			data-title="Titus 1:4b"
-			data-sub="Evening Service · January 21, 2018">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2018.01.21.ETitus1.4bJackWerth"
+				data-passage="Titus 1:4b" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Titus 1:4b"
+				data-audio="https://archive.org/download/2018.01.21.ETitus1.4bJackWerth/2018.01.21.E%20Titus%201.4b%20-%20Jack%20Werth.mp3"
+				data-title="Titus 1:4b"
+				data-sub="Evening Service · January 21, 2018">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -302,14 +358,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Titus 1:5"
-			data-audio="https://archive.org/download/2018.02.04.ETitus1.5JackWerth/2018.02.04.E%20Titus%201.5%20-%20Jack%20Werth.mp3"
-			data-title="Titus 1:5"
-			data-sub="Evening Service · February 4, 2018">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2018.02.04.ETitus1.5JackWerth"
+				data-passage="Titus 1:5" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Titus 1:5"
+				data-audio="https://archive.org/download/2018.02.04.ETitus1.5JackWerth/2018.02.04.E%20Titus%201.5%20-%20Jack%20Werth.mp3"
+				data-title="Titus 1:5"
+				data-sub="Evening Service · February 4, 2018">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -323,14 +385,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Titus 1:6"
-			data-audio="https://archive.org/download/2018.02.11.ETitus1.6JackWerth/2018.02.11.E%20Titus%201.6%20-%20Jack%20Werth.mp3"
-			data-title="Titus 1:6"
-			data-sub="Evening Service · February 11, 2018">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2018.02.11.ETitus1.6JackWerth"
+				data-passage="Titus 1:6" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Titus 1:6"
+				data-audio="https://archive.org/download/2018.02.11.ETitus1.6JackWerth/2018.02.11.E%20Titus%201.6%20-%20Jack%20Werth.mp3"
+				data-title="Titus 1:6"
+				data-sub="Evening Service · February 11, 2018">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -344,14 +412,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Titus 1:7a"
-			data-audio="https://archive.org/download/2018.02.18.ETitus1.7aJackWerth/2018.02.18.E%20Titus%201.7a%20-%20Jack%20Werth.mp3"
-			data-title="Titus 1:7a"
-			data-sub="Evening Service · February 18, 2018">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2018.02.18.ETitus1.7aJackWerth"
+				data-passage="Titus 1:7a" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Titus 1:7a"
+				data-audio="https://archive.org/download/2018.02.18.ETitus1.7aJackWerth/2018.02.18.E%20Titus%201.7a%20-%20Jack%20Werth.mp3"
+				data-title="Titus 1:7a"
+				data-sub="Evening Service · February 18, 2018">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -365,14 +439,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Titus 1:7b"
-			data-audio="https://archive.org/download/2018.02.25.ETitus1.7bJackWerth/2018.02.25.E%20Titus%201.7b%20-%20Jack%20Werth.mp3"
-			data-title="Titus 1:7b"
-			data-sub="Evening Service · February 25, 2018">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2018.02.25.ETitus1.7bJackWerth"
+				data-passage="Titus 1:7b" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Titus 1:7b"
+				data-audio="https://archive.org/download/2018.02.25.ETitus1.7bJackWerth/2018.02.25.E%20Titus%201.7b%20-%20Jack%20Werth.mp3"
+				data-title="Titus 1:7b"
+				data-sub="Evening Service · February 25, 2018">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -386,14 +466,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Titus 1:8"
-			data-audio="https://archive.org/download/2018.03.04.ETitus1.8JackWerth/2018.03.04.E%20Titus%201.8%20-%20Jack%20Werth.mp3"
-			data-title="Titus 1:8"
-			data-sub="Evening Service · March 4, 2018">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2018.03.04.ETitus1.8JackWerth"
+				data-passage="Titus 1:8" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Titus 1:8"
+				data-audio="https://archive.org/download/2018.03.04.ETitus1.8JackWerth/2018.03.04.E%20Titus%201.8%20-%20Jack%20Werth.mp3"
+				data-title="Titus 1:8"
+				data-sub="Evening Service · March 4, 2018">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -407,14 +493,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Titus 1:9a"
-			data-audio="https://archive.org/download/2018.03.11.ETitus1.9aJackWerth/2018.03.11.E%20Titus%201.9a%20-%20Jack%20Werth.mp3"
-			data-title="Titus 1:9a"
-			data-sub="Evening Service · March 11, 2018">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2018.03.11.ETitus1.9aJackWerth"
+				data-passage="Titus 1:9a" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Titus 1:9a"
+				data-audio="https://archive.org/download/2018.03.11.ETitus1.9aJackWerth/2018.03.11.E%20Titus%201.9a%20-%20Jack%20Werth.mp3"
+				data-title="Titus 1:9a"
+				data-sub="Evening Service · March 11, 2018">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -428,14 +520,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Titus 1:9b"
-			data-audio="https://archive.org/download/2018.03.25.ETitus1.9bJackWerth/2018.03.25.E%20Titus%201.9b%20-%20Jack%20Werth.mp3"
-			data-title="Titus 1:9b"
-			data-sub="Evening Service · March 25, 2018">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2018.03.25.ETitus1.9bJackWerth"
+				data-passage="Titus 1:9b" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Titus 1:9b"
+				data-audio="https://archive.org/download/2018.03.25.ETitus1.9bJackWerth/2018.03.25.E%20Titus%201.9b%20-%20Jack%20Werth.mp3"
+				data-title="Titus 1:9b"
+				data-sub="Evening Service · March 25, 2018">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -449,14 +547,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Titus 1:10"
-			data-audio="https://archive.org/download/2018.04.01.ETitus1.10JackWerth/2018.04.01.E%20Titus%201.10%20-%20Jack%20Werth.mp3"
-			data-title="Titus 1:10"
-			data-sub="Evening Service · April 1, 2018">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2018.04.01.ETitus1.10JackWerth"
+				data-passage="Titus 1:10" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Titus 1:10"
+				data-audio="https://archive.org/download/2018.04.01.ETitus1.10JackWerth/2018.04.01.E%20Titus%201.10%20-%20Jack%20Werth.mp3"
+				data-title="Titus 1:10"
+				data-sub="Evening Service · April 1, 2018">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -470,14 +574,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Titus 1:11"
-			data-audio="https://archive.org/download/2018.04.08.ETitus1.11JackWerth/2018.04.08.E%20Titus%201.11%20-%20Jack%20Werth.mp3"
-			data-title="Titus 1:11"
-			data-sub="Evening Service · April 8, 2018">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2018.04.08.ETitus1.11JackWerth"
+				data-passage="Titus 1:11" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Titus 1:11"
+				data-audio="https://archive.org/download/2018.04.08.ETitus1.11JackWerth/2018.04.08.E%20Titus%201.11%20-%20Jack%20Werth.mp3"
+				data-title="Titus 1:11"
+				data-sub="Evening Service · April 8, 2018">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -491,14 +601,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Titus 1:12-13a"
-			data-audio="https://archive.org/download/2018.04.15.ETitus1.1213aJackWerth/2018.04.15.E%20Titus%201.12-13a%20-%20Jack%20Werth.mp3"
-			data-title="Titus 1:12-13a"
-			data-sub="Evening Service · April 15, 2018">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2018.04.15.ETitus1.1213aJackWerth"
+				data-passage="Titus 1:12-13a" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Titus 1:12-13a"
+				data-audio="https://archive.org/download/2018.04.15.ETitus1.1213aJackWerth/2018.04.15.E%20Titus%201.12-13a%20-%20Jack%20Werth.mp3"
+				data-title="Titus 1:12-13a"
+				data-sub="Evening Service · April 15, 2018">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -512,14 +628,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Titus 1:13"
-			data-audio="https://archive.org/download/2018.04.22.ETitus1.13JackWerth/2018.04.22.E%20Titus%201.13%20-%20Jack%20Werth.mp3"
-			data-title="Titus 1:13"
-			data-sub="Evening Service · April 22, 2018">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2018.04.22.ETitus1.13JackWerth"
+				data-passage="Titus 1:13" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Titus 1:13"
+				data-audio="https://archive.org/download/2018.04.22.ETitus1.13JackWerth/2018.04.22.E%20Titus%201.13%20-%20Jack%20Werth.mp3"
+				data-title="Titus 1:13"
+				data-sub="Evening Service · April 22, 2018">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -533,14 +655,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Titus 1:14"
-			data-audio="https://archive.org/download/2018.05.06.ETitus1.14JackWerth/2018.05.06.E%20Titus%201.14%20-%20Jack%20Werth.mp3"
-			data-title="Titus 1:14"
-			data-sub="Evening Service · May 6, 2018">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2018.05.06.ETitus1.14JackWerth"
+				data-passage="Titus 1:14" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Titus 1:14"
+				data-audio="https://archive.org/download/2018.05.06.ETitus1.14JackWerth/2018.05.06.E%20Titus%201.14%20-%20Jack%20Werth.mp3"
+				data-title="Titus 1:14"
+				data-sub="Evening Service · May 6, 2018">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -554,14 +682,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Titus 1:15"
-			data-audio="https://archive.org/download/2018.05.13.ETitus1.15JackWerth/2018.05.13.E%20Titus%201.15%20-%20Jack%20Werth.mp3"
-			data-title="Titus 1:15"
-			data-sub="Evening Service · May 13, 2018">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2018.05.13.ETitus1.15JackWerth"
+				data-passage="Titus 1:15" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Titus 1:15"
+				data-audio="https://archive.org/download/2018.05.13.ETitus1.15JackWerth/2018.05.13.E%20Titus%201.15%20-%20Jack%20Werth.mp3"
+				data-title="Titus 1:15"
+				data-sub="Evening Service · May 13, 2018">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -575,14 +709,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Titus 1:15"
-			data-audio="https://archive.org/download/2018.05.20.ETitus1.15JackWerth/2018.05.20.E%20Titus%201.15%20-%20Jack%20Werth.mp3"
-			data-title="Titus 1:15"
-			data-sub="Evening Service · May 20, 2018">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2018.05.20.ETitus1.15JackWerth"
+				data-passage="Titus 1:15" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Titus 1:15"
+				data-audio="https://archive.org/download/2018.05.20.ETitus1.15JackWerth/2018.05.20.E%20Titus%201.15%20-%20Jack%20Werth.mp3"
+				data-title="Titus 1:15"
+				data-sub="Evening Service · May 20, 2018">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -596,14 +736,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Titus 1:16"
-			data-audio="https://archive.org/download/2018.05.27.ETitus1.16JackWerth/2018.05.27.E%20Titus%201.16%20-%20Jack%20Werth.mp3"
-			data-title="Titus 1:16"
-			data-sub="Evening Service · May 27, 2018">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2018.05.27.ETitus1.16JackWerth"
+				data-passage="Titus 1:16" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Titus 1:16"
+				data-audio="https://archive.org/download/2018.05.27.ETitus1.16JackWerth/2018.05.27.E%20Titus%201.16%20-%20Jack%20Werth.mp3"
+				data-title="Titus 1:16"
+				data-sub="Evening Service · May 27, 2018">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -617,14 +763,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Titus 2:1-2"
-			data-audio="https://archive.org/download/2018.06.10.ETitus2.12JackWerth/2018.06.10.E%20Titus%202.1-2%20-%20Jack%20Werth.mp3"
-			data-title="Titus 2:1-2"
-			data-sub="Evening Service · June 10, 2018">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2018.06.10.ETitus2.12JackWerth"
+				data-passage="Titus 2:1-2" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Titus 2:1-2"
+				data-audio="https://archive.org/download/2018.06.10.ETitus2.12JackWerth/2018.06.10.E%20Titus%202.1-2%20-%20Jack%20Werth.mp3"
+				data-title="Titus 2:1-2"
+				data-sub="Evening Service · June 10, 2018">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -638,14 +790,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Titus 2:2"
-			data-audio="https://archive.org/download/2018.06.17.ETitus2.2JackWerth/2018.06.17.E%20Titus%202.2%20-%20Jack%20Werth.mp3"
-			data-title="Titus 2:2"
-			data-sub="Evening Service · June 17, 2018">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2018.06.17.ETitus2.2JackWerth"
+				data-passage="Titus 2:2" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Titus 2:2"
+				data-audio="https://archive.org/download/2018.06.17.ETitus2.2JackWerth/2018.06.17.E%20Titus%202.2%20-%20Jack%20Werth.mp3"
+				data-title="Titus 2:2"
+				data-sub="Evening Service · June 17, 2018">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -659,14 +817,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Titus 2:3"
-			data-audio="https://archive.org/download/2018.06.24.ETitus2.3JackWerth/2018.06.24.E%20Titus%202.3%20-%20Jack%20Werth.mp3"
-			data-title="Titus 2:3"
-			data-sub="Evening Service · June 24, 2018">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2018.06.24.ETitus2.3JackWerth"
+				data-passage="Titus 2:3" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Titus 2:3"
+				data-audio="https://archive.org/download/2018.06.24.ETitus2.3JackWerth/2018.06.24.E%20Titus%202.3%20-%20Jack%20Werth.mp3"
+				data-title="Titus 2:3"
+				data-sub="Evening Service · June 24, 2018">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -680,14 +844,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Titus 2:4-5a"
-			data-audio="https://archive.org/download/2018.07.01.ETitus2.45aJackWerth/2018.07.01.E%20Titus%202.4-5a%20-%20Jack%20Werth.mp3"
-			data-title="Titus 2:4-5a"
-			data-sub="Evening Service · July 1, 2018">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2018.07.01.ETitus2.45aJackWerth"
+				data-passage="Titus 2:4-5a" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Titus 2:4-5a"
+				data-audio="https://archive.org/download/2018.07.01.ETitus2.45aJackWerth/2018.07.01.E%20Titus%202.4-5a%20-%20Jack%20Werth.mp3"
+				data-title="Titus 2:4-5a"
+				data-sub="Evening Service · July 1, 2018">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -701,14 +871,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Titus 2:5b"
-			data-audio="https://archive.org/download/2018.07.08.ETitus2.5bJackWerth/2018.07.08.E%20Titus%202.5b%20-%20Jack%20Werth.mp3"
-			data-title="Titus 2:5b"
-			data-sub="Evening Service · July 8, 2018">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2018.07.08.ETitus2.5bJackWerth"
+				data-passage="Titus 2:5b" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Titus 2:5b"
+				data-audio="https://archive.org/download/2018.07.08.ETitus2.5bJackWerth/2018.07.08.E%20Titus%202.5b%20-%20Jack%20Werth.mp3"
+				data-title="Titus 2:5b"
+				data-sub="Evening Service · July 8, 2018">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -722,14 +898,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Titus 2:6"
-			data-audio="https://archive.org/download/2018.07.15.ETitus2.6JackWerth/2018.07.15.E%20Titus%202.6%20-%20Jack%20Werth.mp3"
-			data-title="Titus 2:6"
-			data-sub="Evening Service · July 15, 2018">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2018.07.15.ETitus2.6JackWerth"
+				data-passage="Titus 2:6" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Titus 2:6"
+				data-audio="https://archive.org/download/2018.07.15.ETitus2.6JackWerth/2018.07.15.E%20Titus%202.6%20-%20Jack%20Werth.mp3"
+				data-title="Titus 2:6"
+				data-sub="Evening Service · July 15, 2018">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -743,14 +925,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Titus 2:7-8"
-			data-audio="https://archive.org/download/2018.07.22.ETitus2.78JackWerth/2018.07.22.E%20Titus%202.7-8%20-%20Jack%20Werth.mp3"
-			data-title="Titus 2:7-8"
-			data-sub="Evening Service · July 22, 2018">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2018.07.22.ETitus2.78JackWerth"
+				data-passage="Titus 2:7-8" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Titus 2:7-8"
+				data-audio="https://archive.org/download/2018.07.22.ETitus2.78JackWerth/2018.07.22.E%20Titus%202.7-8%20-%20Jack%20Werth.mp3"
+				data-title="Titus 2:7-8"
+				data-sub="Evening Service · July 22, 2018">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -764,14 +952,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Titus 2:9-10"
-			data-audio="https://archive.org/download/2018.07.29.ETitus2.910JackWerth/2018.07.29.E%20Titus%202.9-10%20-%20Jack%20Werth.mp3"
-			data-title="Titus 2:9-10"
-			data-sub="Evening Service · July 29, 2018">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2018.07.29.ETitus2.910JackWerth"
+				data-passage="Titus 2:9-10" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Titus 2:9-10"
+				data-audio="https://archive.org/download/2018.07.29.ETitus2.910JackWerth/2018.07.29.E%20Titus%202.9-10%20-%20Jack%20Werth.mp3"
+				data-title="Titus 2:9-10"
+				data-sub="Evening Service · July 29, 2018">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -785,14 +979,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Titus 2:9-10"
-			data-audio="https://archive.org/download/2018.08.05.ETitus2.910JackWerth/2018.08.05.E%20Titus%202.9-10%20-%20Jack%20Werth.mp3"
-			data-title="Titus 2:9-10"
-			data-sub="Evening Service · August 5, 2018">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2018.08.05.ETitus2.910JackWerth"
+				data-passage="Titus 2:9-10" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Titus 2:9-10"
+				data-audio="https://archive.org/download/2018.08.05.ETitus2.910JackWerth/2018.08.05.E%20Titus%202.9-10%20-%20Jack%20Werth.mp3"
+				data-title="Titus 2:9-10"
+				data-sub="Evening Service · August 5, 2018">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -806,14 +1006,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Titus 2:9-10"
-			data-audio="https://archive.org/download/2018.08.12.ETitus2.910JackWerth/2018.08.12.E%20Titus%202.9-10%20-%20Jack%20Werth.mp3"
-			data-title="Titus 2:9-10"
-			data-sub="Evening Service · August 12, 2018">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2018.08.12.ETitus2.910JackWerth"
+				data-passage="Titus 2:9-10" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Titus 2:9-10"
+				data-audio="https://archive.org/download/2018.08.12.ETitus2.910JackWerth/2018.08.12.E%20Titus%202.9-10%20-%20Jack%20Werth.mp3"
+				data-title="Titus 2:9-10"
+				data-sub="Evening Service · August 12, 2018">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -827,14 +1033,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Titus 2:11"
-			data-audio="https://archive.org/download/2018.08.19.ETitus2.11JackWerth/2018.08.19.E%20Titus%202.11%20-%20Jack%20Werth.mp3"
-			data-title="Titus 2:11"
-			data-sub="Evening Service · August 19, 2018">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2018.08.19.ETitus2.11JackWerth"
+				data-passage="Titus 2:11" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Titus 2:11"
+				data-audio="https://archive.org/download/2018.08.19.ETitus2.11JackWerth/2018.08.19.E%20Titus%202.11%20-%20Jack%20Werth.mp3"
+				data-title="Titus 2:11"
+				data-sub="Evening Service · August 19, 2018">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -848,14 +1060,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Titus 2:11-12"
-			data-audio="https://archive.org/download/2018.08.26.ETitus2.1112JackWerth/2018.08.26.E%20Titus%202.11-12%20-%20Jack%20Werth.mp3"
-			data-title="Titus 2:11-12"
-			data-sub="Evening Service · August 26, 2018">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2018.08.26.ETitus2.1112JackWerth"
+				data-passage="Titus 2:11-12" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Titus 2:11-12"
+				data-audio="https://archive.org/download/2018.08.26.ETitus2.1112JackWerth/2018.08.26.E%20Titus%202.11-12%20-%20Jack%20Werth.mp3"
+				data-title="Titus 2:11-12"
+				data-sub="Evening Service · August 26, 2018">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -869,14 +1087,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Titus 2:12b"
-			data-audio="https://archive.org/download/2018.09.02.ETitus2.12bJackWerth/2018.09.02.E%20Titus%202.12b%20-%20Jack%20Werth.mp3"
-			data-title="Titus 2:12b"
-			data-sub="Evening Service · September 2, 2018">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2018.09.02.ETitus2.12bJackWerth"
+				data-passage="Titus 2:12b" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Titus 2:12b"
+				data-audio="https://archive.org/download/2018.09.02.ETitus2.12bJackWerth/2018.09.02.E%20Titus%202.12b%20-%20Jack%20Werth.mp3"
+				data-title="Titus 2:12b"
+				data-sub="Evening Service · September 2, 2018">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -890,14 +1114,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Titus 2:13"
-			data-audio="https://archive.org/download/2018.09.16.ETitus2.13JackWerth/2018.09.16.E%20Titus%202.13%20-%20Jack%20Werth.mp3"
-			data-title="Titus 2:13"
-			data-sub="Evening Service · September 16, 2018">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2018.09.16.ETitus2.13JackWerth"
+				data-passage="Titus 2:13" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Titus 2:13"
+				data-audio="https://archive.org/download/2018.09.16.ETitus2.13JackWerth/2018.09.16.E%20Titus%202.13%20-%20Jack%20Werth.mp3"
+				data-title="Titus 2:13"
+				data-sub="Evening Service · September 16, 2018">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -911,14 +1141,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Titus 2:14a"
-			data-audio="https://archive.org/download/2018.09.23.ETitus2.14aJackWerth/2018.09.23.E%20Titus%202.14a%20-%20Jack%20Werth.mp3"
-			data-title="Titus 2:14a"
-			data-sub="Evening Service · September 23, 2018">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2018.09.23.ETitus2.14aJackWerth"
+				data-passage="Titus 2:14a" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Titus 2:14a"
+				data-audio="https://archive.org/download/2018.09.23.ETitus2.14aJackWerth/2018.09.23.E%20Titus%202.14a%20-%20Jack%20Werth.mp3"
+				data-title="Titus 2:14a"
+				data-sub="Evening Service · September 23, 2018">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -932,14 +1168,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Titus 2:14b"
-			data-audio="https://archive.org/download/2018.10.07.ETitus2.14bJackWerth/2018.10.07.E%20Titus%202.14b%20-%20Jack%20Werth.mp3"
-			data-title="Titus 2:14b"
-			data-sub="Evening Service · October 7, 2018">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2018.10.07.ETitus2.14bJackWerth"
+				data-passage="Titus 2:14b" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Titus 2:14b"
+				data-audio="https://archive.org/download/2018.10.07.ETitus2.14bJackWerth/2018.10.07.E%20Titus%202.14b%20-%20Jack%20Werth.mp3"
+				data-title="Titus 2:14b"
+				data-sub="Evening Service · October 7, 2018">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -953,14 +1195,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Titus 2:15"
-			data-audio="https://archive.org/download/2018.10.14.ETitus2.15JackWerth/2018.10.14.E%20Titus%202.15%20-%20Jack%20Werth.mp3"
-			data-title="Titus 2:15"
-			data-sub="Evening Service · October 14, 2018">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2018.10.14.ETitus2.15JackWerth"
+				data-passage="Titus 2:15" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Titus 2:15"
+				data-audio="https://archive.org/download/2018.10.14.ETitus2.15JackWerth/2018.10.14.E%20Titus%202.15%20-%20Jack%20Werth.mp3"
+				data-title="Titus 2:15"
+				data-sub="Evening Service · October 14, 2018">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -974,14 +1222,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Titus 2:15"
-			data-audio="https://archive.org/download/2018.10.21.ETitus2.15JackWerth/2018.10.21.E%20Titus%202.15%20-%20Jack%20Werth.mp3"
-			data-title="Titus 2:15"
-			data-sub="Evening Service · October 21, 2018">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2018.10.21.ETitus2.15JackWerth"
+				data-passage="Titus 2:15" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Titus 2:15"
+				data-audio="https://archive.org/download/2018.10.21.ETitus2.15JackWerth/2018.10.21.E%20Titus%202.15%20-%20Jack%20Werth.mp3"
+				data-title="Titus 2:15"
+				data-sub="Evening Service · October 21, 2018">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -995,14 +1249,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Titus 3:1"
-			data-audio="https://archive.org/download/2018.10.28.ETitus3.1JackWerth/2018.10.28.E%20Titus%203.1%20-%20Jack%20Werth.mp3"
-			data-title="Titus 3:1"
-			data-sub="Evening Service · October 28, 2018">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2018.10.28.ETitus3.1JackWerth"
+				data-passage="Titus 3:1" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Titus 3:1"
+				data-audio="https://archive.org/download/2018.10.28.ETitus3.1JackWerth/2018.10.28.E%20Titus%203.1%20-%20Jack%20Werth.mp3"
+				data-title="Titus 3:1"
+				data-sub="Evening Service · October 28, 2018">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -1016,14 +1276,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Titus 3:1b-2"
-			data-audio="https://archive.org/download/2018.11.04.ETitus3.1b2JackWerth/2018.11.04.E%20Titus%203.1b-2%20-%20Jack%20Werth.mp3"
-			data-title="Titus 3:1b-2"
-			data-sub="Evening Service · November 4, 2018">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2018.11.04.ETitus3.1b2JackWerth"
+				data-passage="Titus 3:1b-2" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Titus 3:1b-2"
+				data-audio="https://archive.org/download/2018.11.04.ETitus3.1b2JackWerth/2018.11.04.E%20Titus%203.1b-2%20-%20Jack%20Werth.mp3"
+				data-title="Titus 3:1b-2"
+				data-sub="Evening Service · November 4, 2018">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -1037,14 +1303,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Titus 3:3a"
-			data-audio="https://archive.org/download/2018.11.11.ETitus3.3aJackWerth/2018.11.11.E%20Titus%203.3a%20-%20Jack%20Werth.mp3"
-			data-title="Titus 3:3a"
-			data-sub="Evening Service · November 11, 2018">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2018.11.11.ETitus3.3aJackWerth"
+				data-passage="Titus 3:3a" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Titus 3:3a"
+				data-audio="https://archive.org/download/2018.11.11.ETitus3.3aJackWerth/2018.11.11.E%20Titus%203.3a%20-%20Jack%20Werth.mp3"
+				data-title="Titus 3:3a"
+				data-sub="Evening Service · November 11, 2018">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -1058,14 +1330,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Titus 3:3b"
-			data-audio="https://archive.org/download/2018.11.18.ETitus3.3bJackWerth/2018.11.18.E%20Titus%203.3b%20-%20Jack%20Werth.mp3"
-			data-title="Titus 3:3b"
-			data-sub="Evening Service · November 18, 2018">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2018.11.18.ETitus3.3bJackWerth"
+				data-passage="Titus 3:3b" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Titus 3:3b"
+				data-audio="https://archive.org/download/2018.11.18.ETitus3.3bJackWerth/2018.11.18.E%20Titus%203.3b%20-%20Jack%20Werth.mp3"
+				data-title="Titus 3:3b"
+				data-sub="Evening Service · November 18, 2018">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -1079,14 +1357,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Titus 3:4-5a"
-			data-audio="https://archive.org/download/2018.11.25.ETitus3.45aJackWerth/2018.11.25.E%20Titus%203.4-5a%20-%20Jack%20Werth.mp3"
-			data-title="Titus 3:4-5a"
-			data-sub="Evening Service · November 25, 2018">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2018.11.25.ETitus3.45aJackWerth"
+				data-passage="Titus 3:4-5a" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Titus 3:4-5a"
+				data-audio="https://archive.org/download/2018.11.25.ETitus3.45aJackWerth/2018.11.25.E%20Titus%203.4-5a%20-%20Jack%20Werth.mp3"
+				data-title="Titus 3:4-5a"
+				data-sub="Evening Service · November 25, 2018">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -1100,14 +1384,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Titus 3:5b-6"
-			data-audio="https://archive.org/download/2018.12.02.ETitus3.5b6JackWerth/2018.12.02.E%20Titus%203.5b-6%20-%20Jack%20Werth.mp3"
-			data-title="Titus 3:5b-6"
-			data-sub="Evening Service · December 2, 2018">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2018.12.02.ETitus3.5b6JackWerth"
+				data-passage="Titus 3:5b-6" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Titus 3:5b-6"
+				data-audio="https://archive.org/download/2018.12.02.ETitus3.5b6JackWerth/2018.12.02.E%20Titus%203.5b-6%20-%20Jack%20Werth.mp3"
+				data-title="Titus 3:5b-6"
+				data-sub="Evening Service · December 2, 2018">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -1121,14 +1411,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Titus 3:7"
-			data-audio="https://archive.org/download/2018.12.09.ETitus3.7JackWerth/2018.12.09.E%20Titus%203.7%20-%20Jack%20Werth.mp3"
-			data-title="Titus 3:7"
-			data-sub="Evening Service · December 9, 2018">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2018.12.09.ETitus3.7JackWerth"
+				data-passage="Titus 3:7" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Titus 3:7"
+				data-audio="https://archive.org/download/2018.12.09.ETitus3.7JackWerth/2018.12.09.E%20Titus%203.7%20-%20Jack%20Werth.mp3"
+				data-title="Titus 3:7"
+				data-sub="Evening Service · December 9, 2018">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -1142,14 +1438,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Titus 3:8"
-			data-audio="https://archive.org/download/2018.12.16.ETitus3.8JackWerth/2018.12.16.E%20Titus%203.8%20-%20Jack%20Werth.mp3"
-			data-title="Titus 3:8"
-			data-sub="Evening Service · December 16, 2018">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2018.12.16.ETitus3.8JackWerth"
+				data-passage="Titus 3:8" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Titus 3:8"
+				data-audio="https://archive.org/download/2018.12.16.ETitus3.8JackWerth/2018.12.16.E%20Titus%203.8%20-%20Jack%20Werth.mp3"
+				data-title="Titus 3:8"
+				data-sub="Evening Service · December 16, 2018">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -1163,14 +1465,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Titus 3:9"
-			data-audio="https://archive.org/download/2018.12.30.ETitus3.9JackWerth/2018.12.30.E%20Titus%203.9%20-%20Jack%20Werth.mp3"
-			data-title="Titus 3:9"
-			data-sub="Evening Service · December 30, 2018">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2018.12.30.ETitus3.9JackWerth"
+				data-passage="Titus 3:9" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Titus 3:9"
+				data-audio="https://archive.org/download/2018.12.30.ETitus3.9JackWerth/2018.12.30.E%20Titus%203.9%20-%20Jack%20Werth.mp3"
+				data-title="Titus 3:9"
+				data-sub="Evening Service · December 30, 2018">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -1184,14 +1492,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Titus 3:10"
-			data-audio="https://archive.org/download/2018.01.06.ETitus3.10JackWerth/2019.01.06.E%20Titus%203.10%20-%20Jack%20Werth.mp3"
-			data-title="Titus 3:10"
-			data-sub="Evening Service · January 6, 2019">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2018.01.06.ETitus3.10JackWerth"
+				data-passage="Titus 3:10" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Titus 3:10"
+				data-audio="https://archive.org/download/2018.01.06.ETitus3.10JackWerth/2019.01.06.E%20Titus%203.10%20-%20Jack%20Werth.mp3"
+				data-title="Titus 3:10"
+				data-sub="Evening Service · January 6, 2019">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -1205,14 +1519,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Titus 3:10-11"
-			data-audio="https://archive.org/download/2019.01.13.ETitus3.1011JackWerth/2019.01.13.E%20Titus%203.10-11%20-%20Jack%20Werth.mp3"
-			data-title="Titus 3:10-11"
-			data-sub="Evening Service · January 13, 2019">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2019.01.13.ETitus3.1011JackWerth"
+				data-passage="Titus 3:10-11" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Titus 3:10-11"
+				data-audio="https://archive.org/download/2019.01.13.ETitus3.1011JackWerth/2019.01.13.E%20Titus%203.10-11%20-%20Jack%20Werth.mp3"
+				data-title="Titus 3:10-11"
+				data-sub="Evening Service · January 13, 2019">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -1226,14 +1546,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Titus 3:12-13"
-			data-audio="https://archive.org/download/2019.01.20.XTitus3.1213JackWerth/2019.01.20.X%20Titus%203.12-13%20-%20Jack%20Werth.mp3"
-			data-title="Titus 3:12-13"
-			data-sub="Evening Service · January 20, 2019">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2019.01.20.XTitus3.1213JackWerth"
+				data-passage="Titus 3:12-13" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Titus 3:12-13"
+				data-audio="https://archive.org/download/2019.01.20.XTitus3.1213JackWerth/2019.01.20.X%20Titus%203.12-13%20-%20Jack%20Werth.mp3"
+				data-title="Titus 3:12-13"
+				data-sub="Evening Service · January 20, 2019">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -1247,14 +1573,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Titus 3:14"
-			data-audio="https://archive.org/download/2019.01.27.ETitus3.14JackWerth/2019.01.27.E%20Titus%203.14%20-%20Jack%20Werth.mp3"
-			data-title="Titus 3:14"
-			data-sub="Evening Service · January 27, 2019">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2019.01.27.ETitus3.14JackWerth"
+				data-passage="Titus 3:14" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Titus 3:14"
+				data-audio="https://archive.org/download/2019.01.27.ETitus3.14JackWerth/2019.01.27.E%20Titus%203.14%20-%20Jack%20Werth.mp3"
+				data-title="Titus 3:14"
+				data-sub="Evening Service · January 27, 2019">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -1268,14 +1600,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Titus 3:15"
-			data-audio="https://archive.org/download/2019.02.03.ETitus3.15JackWerth/2019.02.03.E%20Titus%203.15%20-%20Jack%20Werth.mp3"
-			data-title="Titus 3:15"
-			data-sub="Evening Service · February 3, 2019">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2019.02.03.ETitus3.15JackWerth"
+				data-passage="Titus 3:15" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Titus 3:15"
+				data-audio="https://archive.org/download/2019.02.03.ETitus3.15JackWerth/2019.02.03.E%20Titus%203.15%20-%20Jack%20Werth.mp3"
+				data-title="Titus 3:15"
+				data-sub="Evening Service · February 3, 2019">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 		</div>
 		<div class="pagination"></div>
@@ -1325,8 +1663,15 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 var JW = {"index":"https://werth-code.github.io/jack-werth-sermons/sermons-index.json","archive":"https://werth-code.github.io/jack-werth-sermons/sermons/"};
 //# sourceURL=jw-app-js-extra
 </script>
-<script id="jw-app-js" src="https://werth-code.github.io/jack-werth-sermons/wp-content/themes/jackwerth/assets/js/app.js?ver=1.0.9"></script>
-<script id="jw-player-js" src="https://werth-code.github.io/jack-werth-sermons/wp-content/themes/jackwerth/assets/js/player.js?ver=1.0.9"></script>
+<script id="jw-app-js" src="https://werth-code.github.io/jack-werth-sermons/wp-content/themes/jackwerth/assets/js/app.js?ver=1.1.0"></script>
+<script id="jw-player-js" src="https://werth-code.github.io/jack-werth-sermons/wp-content/themes/jackwerth/assets/js/player.js?ver=1.1.0"></script>
+<script id="supabase-js-js" src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script id="jw-config-js" src="https://werth-code.github.io/jack-werth-sermons/wp-content/themes/jackwerth/assets/js/jw-config.js?ver=1.1.0"></script>
+<script id="jw-config-js-after">
+window.JW_HOME="https:\/\/werth-code.github.io\/jack-werth-sermons\/";
+//# sourceURL=jw-config-js-after
+</script>
+<script id="jw-account-js" src="https://werth-code.github.io/jack-werth-sermons/wp-content/themes/jackwerth/assets/js/account.js?ver=1.1.0"></script>
 <script id="wp-emoji-settings" type="application/json">
 {"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"https://werth-code.github.io/jack-werth-sermons/wp-includes/js/wp-emoji-release.min.js?ver=7.0"}}
 </script>

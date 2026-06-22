@@ -50,6 +50,7 @@
 			}
 			?>
 			<a class="nav-cta" href="<?php echo esc_url( get_post_type_archive_link( 'sermon' ) ); ?>">Search the Library →</a>
+			<div data-account></div>
 		</nav>
 	</div>
 </header>

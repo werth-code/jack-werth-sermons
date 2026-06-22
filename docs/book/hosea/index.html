@@ -6,7 +6,8 @@
 	<script>document.documentElement.className += ' js';</script>
 	<title>Hosea &#8211; Jack Werth — Expository Sermons</title>
 <meta name='robots' content='max-image-preview:large' />
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="preconnect" href="https://archive.org"><link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="preconnect" href="https://archive.org"><link rel='dns-prefetch' href='//cdn.jsdelivr.net' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
 <link rel="alternate" type="application/rss+xml" title="Jack Werth — Expository Sermons &raquo; Feed" href="https://werth-code.github.io/jack-werth-sermons/feed/" />
 <link rel="alternate" type="application/rss+xml" title="Jack Werth — Expository Sermons &raquo; Comments Feed" href="https://werth-code.github.io/jack-werth-sermons/comments/feed/" />
 <link rel="alternate" type="application/rss+xml" title="Jack Werth — Expository Sermons &raquo; Hosea Book Feed" href="https://werth-code.github.io/jack-werth-sermons/book/hosea/feed/" />
@@ -52,7 +53,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 </style>
 
 <link rel='stylesheet' id='jw-fonts-css' href='https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&#038;family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..600&#038;family=JetBrains+Mono:wght@400;500&#038;display=swap' media='all' />
-<link rel='stylesheet' id='jw-main-css' href='https://werth-code.github.io/jack-werth-sermons/wp-content/themes/jackwerth/assets/css/main.css?ver=1.0.9' media='all' />
+<link rel='stylesheet' id='jw-main-css' href='https://werth-code.github.io/jack-werth-sermons/wp-content/themes/jackwerth/assets/css/main.css?ver=1.1.0' media='all' />
 <link rel="https://api.w.org/" href="https://werth-code.github.io/jack-werth-sermons/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://werth-code.github.io/jack-werth-sermons/wp-json/wp/v2/bible_book/39" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://werth-code.github.io/jack-werth-sermons/xmlrpc.php?rsd" />
 <meta name="generator" content="WordPress 7.0" />
 </head>
@@ -72,6 +73,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 
 		<nav class="nav" data-nav aria-label="Primary">
 			<a href="https://werth-code.github.io/jack-werth-sermons/">Home</a><a href="https://werth-code.github.io/jack-werth-sermons/sermons/">Sermons</a><a href="https://werth-code.github.io/jack-werth-sermons/books/">Books</a><a href="https://werth-code.github.io/jack-werth-sermons/for-pastors/">For Pastors</a><a href="https://werth-code.github.io/jack-werth-sermons/about/">About</a>			<a class="nav-cta" href="https://werth-code.github.io/jack-werth-sermons/sermons/">Search the Library →</a>
+			<div data-account></div>
 		</nav>
 	</div>
 </header>
@@ -113,14 +115,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Hosea 1:1"
-			data-audio="https://archive.org/download/2021.11.07.ehosea1.1jackwerth/2021.11.07.E%20Hosea%201.1%20-%20Jack%20Werth.mp3"
-			data-title="Hosea 1:1"
-			data-sub="Evening Service · November 7, 2021">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2021.11.07.ehosea1.1jackwerth"
+				data-passage="Hosea 1:1" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Hosea 1:1"
+				data-audio="https://archive.org/download/2021.11.07.ehosea1.1jackwerth/2021.11.07.E%20Hosea%201.1%20-%20Jack%20Werth.mp3"
+				data-title="Hosea 1:1"
+				data-sub="Evening Service · November 7, 2021">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -134,14 +142,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Hosea 1:2"
-			data-audio="https://archive.org/download/2021.11.14.ehosea1.2jackwerth/2021.11.14.E%20Hosea%201.2%20-%20Jack%20Werth.mp3"
-			data-title="Hosea 1:2"
-			data-sub="Evening Service · November 14, 2021">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2021.11.14.ehosea1.2jackwerth"
+				data-passage="Hosea 1:2" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Hosea 1:2"
+				data-audio="https://archive.org/download/2021.11.14.ehosea1.2jackwerth/2021.11.14.E%20Hosea%201.2%20-%20Jack%20Werth.mp3"
+				data-title="Hosea 1:2"
+				data-sub="Evening Service · November 14, 2021">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -155,14 +169,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Hosea 1:3-5"
-			data-audio="https://archive.org/download/2021.11.21.ehosea1.35jackwerth/2021.11.21.E%20Hosea%201.3-5%20-%20Jack%20Werth.mp3"
-			data-title="Hosea 1:3-5"
-			data-sub="Evening Service · November 21, 2021">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2021.11.21.ehosea1.35jackwerth"
+				data-passage="Hosea 1:3-5" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Hosea 1:3-5"
+				data-audio="https://archive.org/download/2021.11.21.ehosea1.35jackwerth/2021.11.21.E%20Hosea%201.3-5%20-%20Jack%20Werth.mp3"
+				data-title="Hosea 1:3-5"
+				data-sub="Evening Service · November 21, 2021">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -176,14 +196,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Hosea 1:6"
-			data-audio="https://archive.org/download/2021.11.28.ehosea1.6jackwerth/2021.11.28.E%20Hosea%201.6%20-%20Jack%20Werth.mp3"
-			data-title="Hosea 1:6"
-			data-sub="Evening Service · November 28, 2021">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2021.11.28.ehosea1.6jackwerth"
+				data-passage="Hosea 1:6" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Hosea 1:6"
+				data-audio="https://archive.org/download/2021.11.28.ehosea1.6jackwerth/2021.11.28.E%20Hosea%201.6%20-%20Jack%20Werth.mp3"
+				data-title="Hosea 1:6"
+				data-sub="Evening Service · November 28, 2021">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -197,14 +223,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Hosea 1:7"
-			data-audio="https://archive.org/download/2021.12.05.ehosea1.7jackwerth/2021.12.05.E%20Hosea%201.7%20-%20Jack%20Werth.mp3"
-			data-title="Hosea 1:7"
-			data-sub="Evening Service · December 5, 2021">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2021.12.05.ehosea1.7jackwerth"
+				data-passage="Hosea 1:7" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Hosea 1:7"
+				data-audio="https://archive.org/download/2021.12.05.ehosea1.7jackwerth/2021.12.05.E%20Hosea%201.7%20-%20Jack%20Werth.mp3"
+				data-title="Hosea 1:7"
+				data-sub="Evening Service · December 5, 2021">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -218,14 +250,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Hosea 1:10-11"
-			data-audio="https://archive.org/download/2021.12.26.ehosea1.1011jackwerth/2021.12.26.E%20Hosea%201.10-11%20-%20Jack%20Werth.mp3"
-			data-title="Hosea 1:10-11"
-			data-sub="Evening Service · December 26, 2021">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2021.12.26.ehosea1.1011jackwerth"
+				data-passage="Hosea 1:10-11" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Hosea 1:10-11"
+				data-audio="https://archive.org/download/2021.12.26.ehosea1.1011jackwerth/2021.12.26.E%20Hosea%201.10-11%20-%20Jack%20Werth.mp3"
+				data-title="Hosea 1:10-11"
+				data-sub="Evening Service · December 26, 2021">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -239,14 +277,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Hosea 2:1-2"
-			data-audio="https://archive.org/download/2022.01.02.ehosea2.12jackwerth/2022.01.02.E%20Hosea%202.1-2%20-%20Jack%20Werth.mp3"
-			data-title="Hosea 2:1-2"
-			data-sub="Evening Service · January 2, 2022">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2022.01.02.ehosea2.12jackwerth"
+				data-passage="Hosea 2:1-2" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Hosea 2:1-2"
+				data-audio="https://archive.org/download/2022.01.02.ehosea2.12jackwerth/2022.01.02.E%20Hosea%202.1-2%20-%20Jack%20Werth.mp3"
+				data-title="Hosea 2:1-2"
+				data-sub="Evening Service · January 2, 2022">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -260,14 +304,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Hosea 2:3-4"
-			data-audio="https://archive.org/download/2022.01.09.ehosea2.34jackwerth/2022.01.09.E%20Hosea%202.3-4%20-%20Jack%20Werth.mp3"
-			data-title="Hosea 2:3-4"
-			data-sub="Evening Service · January 9, 2022">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2022.01.09.ehosea2.34jackwerth"
+				data-passage="Hosea 2:3-4" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Hosea 2:3-4"
+				data-audio="https://archive.org/download/2022.01.09.ehosea2.34jackwerth/2022.01.09.E%20Hosea%202.3-4%20-%20Jack%20Werth.mp3"
+				data-title="Hosea 2:3-4"
+				data-sub="Evening Service · January 9, 2022">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -281,14 +331,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Hosea 2:5-7"
-			data-audio="https://archive.org/download/2022.01.16.ehosea2.57jackwerth/2022.01.16.E%20Hosea%202.5-7%20-%20Jack%20Werth.mp3"
-			data-title="Hosea 2:5-7"
-			data-sub="Evening Service · January 16, 2022">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2022.01.16.ehosea2.57jackwerth"
+				data-passage="Hosea 2:5-7" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Hosea 2:5-7"
+				data-audio="https://archive.org/download/2022.01.16.ehosea2.57jackwerth/2022.01.16.E%20Hosea%202.5-7%20-%20Jack%20Werth.mp3"
+				data-title="Hosea 2:5-7"
+				data-sub="Evening Service · January 16, 2022">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -302,14 +358,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Hosea 2:8-13"
-			data-audio="https://archive.org/download/2022.01.23.ehosea2.813jackwerth/2022.01.23.E%20Hosea%202.8-13%20-%20Jack%20Werth.mp3"
-			data-title="Hosea 2:8-13"
-			data-sub="Evening Service · January 23, 2022">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2022.01.23.ehosea2.813jackwerth"
+				data-passage="Hosea 2:8-13" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Hosea 2:8-13"
+				data-audio="https://archive.org/download/2022.01.23.ehosea2.813jackwerth/2022.01.23.E%20Hosea%202.8-13%20-%20Jack%20Werth.mp3"
+				data-title="Hosea 2:8-13"
+				data-sub="Evening Service · January 23, 2022">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -323,14 +385,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Hosea 2:13-14"
-			data-audio="https://archive.org/download/2022.01.30.ehosea2.1314jackwerth/2022.01.30.E%20Hosea%202.13-14%20-%20Jack%20Werth.mp3"
-			data-title="Hosea 2:13-14"
-			data-sub="Evening Service · January 30, 2022">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2022.01.30.ehosea2.1314jackwerth"
+				data-passage="Hosea 2:13-14" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Hosea 2:13-14"
+				data-audio="https://archive.org/download/2022.01.30.ehosea2.1314jackwerth/2022.01.30.E%20Hosea%202.13-14%20-%20Jack%20Werth.mp3"
+				data-title="Hosea 2:13-14"
+				data-sub="Evening Service · January 30, 2022">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -344,14 +412,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Hosea 2:15"
-			data-audio="https://archive.org/download/2022.04.10.ehosea2.15jackwerth/2022.04.10.E%20Hosea%202.15%20-%20Jack%20Werth.mp3"
-			data-title="Hosea 2:15"
-			data-sub="Evening Service · April 10, 2022">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2022.04.10.ehosea2.15jackwerth"
+				data-passage="Hosea 2:15" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Hosea 2:15"
+				data-audio="https://archive.org/download/2022.04.10.ehosea2.15jackwerth/2022.04.10.E%20Hosea%202.15%20-%20Jack%20Werth.mp3"
+				data-title="Hosea 2:15"
+				data-sub="Evening Service · April 10, 2022">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -365,14 +439,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Hosea 2:16-17"
-			data-audio="https://archive.org/download/2022.04.24.ehosea2.1617jackwerth/2022.04.24.E%20Hosea%202.16-17%20-%20Jack%20Werth.mp3"
-			data-title="Hosea 2:16-17"
-			data-sub="Evening Service · April 24, 2022">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2022.04.24.ehosea2.1617jackwerth"
+				data-passage="Hosea 2:16-17" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Hosea 2:16-17"
+				data-audio="https://archive.org/download/2022.04.24.ehosea2.1617jackwerth/2022.04.24.E%20Hosea%202.16-17%20-%20Jack%20Werth.mp3"
+				data-title="Hosea 2:16-17"
+				data-sub="Evening Service · April 24, 2022">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -386,14 +466,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Hosea 2:18-23"
-			data-audio="https://archive.org/download/2022.05.01.ehosea2.1823jackwerth/2022.05.01.E%20Hosea%202.18-23%20-%20Jack%20Werth.mp3"
-			data-title="Hosea 2:18-23"
-			data-sub="Evening Service · May 1, 2022">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2022.05.01.ehosea2.1823jackwerth"
+				data-passage="Hosea 2:18-23" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Hosea 2:18-23"
+				data-audio="https://archive.org/download/2022.05.01.ehosea2.1823jackwerth/2022.05.01.E%20Hosea%202.18-23%20-%20Jack%20Werth.mp3"
+				data-title="Hosea 2:18-23"
+				data-sub="Evening Service · May 1, 2022">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -407,14 +493,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Hosea 3:1-5"
-			data-audio="https://archive.org/download/2022.05.15.ehosea3.15jackwerth/2022.05.15.E%20Hosea%203.1-5%20-%20Jack%20Werth.mp3"
-			data-title="Hosea 3:1-5"
-			data-sub="Evening Service · May 15, 2022">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2022.05.15.ehosea3.15jackwerth"
+				data-passage="Hosea 3:1-5" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Hosea 3:1-5"
+				data-audio="https://archive.org/download/2022.05.15.ehosea3.15jackwerth/2022.05.15.E%20Hosea%203.1-5%20-%20Jack%20Werth.mp3"
+				data-title="Hosea 3:1-5"
+				data-sub="Evening Service · May 15, 2022">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -428,14 +520,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Hosea 4:1-3"
-			data-audio="https://archive.org/download/2022.06.05.ehosea4.13jackwerth/2022.06.05.E%20Hosea%204.1-3%20-%20Jack%20Werth.mp3"
-			data-title="Hosea 4:1-3"
-			data-sub="Evening Service · June 5, 2022">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2022.06.05.ehosea4.13jackwerth"
+				data-passage="Hosea 4:1-3" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Hosea 4:1-3"
+				data-audio="https://archive.org/download/2022.06.05.ehosea4.13jackwerth/2022.06.05.E%20Hosea%204.1-3%20-%20Jack%20Werth.mp3"
+				data-title="Hosea 4:1-3"
+				data-sub="Evening Service · June 5, 2022">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -449,14 +547,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Hosea 4:4-5"
-			data-audio="https://archive.org/download/2022.06.12.ehosea4.45jackwerth/2022.06.12.E%20Hosea%204.4-5%20-%20Jack%20Werth.mp3"
-			data-title="Hosea 4:4-5"
-			data-sub="Evening Service · June 12, 2022">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2022.06.12.ehosea4.45jackwerth"
+				data-passage="Hosea 4:4-5" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Hosea 4:4-5"
+				data-audio="https://archive.org/download/2022.06.12.ehosea4.45jackwerth/2022.06.12.E%20Hosea%204.4-5%20-%20Jack%20Werth.mp3"
+				data-title="Hosea 4:4-5"
+				data-sub="Evening Service · June 12, 2022">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -470,14 +574,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Hosea 4:6-11"
-			data-audio="https://archive.org/download/2022.06.19.ehosea4.611jackwerth/2022.06.19.E%20Hosea%204.6-11%20-%20Jack%20Werth.mp3"
-			data-title="Hosea 4:6-11"
-			data-sub="Evening Service · June 19, 2022">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2022.06.19.ehosea4.611jackwerth"
+				data-passage="Hosea 4:6-11" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Hosea 4:6-11"
+				data-audio="https://archive.org/download/2022.06.19.ehosea4.611jackwerth/2022.06.19.E%20Hosea%204.6-11%20-%20Jack%20Werth.mp3"
+				data-title="Hosea 4:6-11"
+				data-sub="Evening Service · June 19, 2022">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -491,14 +601,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Hosea 4:12-14"
-			data-audio="https://archive.org/download/2022.06.26.ehosea4.1214jackwerth/2022.06.26.E%20Hosea%204.12-14%20-%20Jack%20Werth.mp3"
-			data-title="Hosea 4:12-14"
-			data-sub="Evening Service · June 26, 2022">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2022.06.26.ehosea4.1214jackwerth"
+				data-passage="Hosea 4:12-14" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Hosea 4:12-14"
+				data-audio="https://archive.org/download/2022.06.26.ehosea4.1214jackwerth/2022.06.26.E%20Hosea%204.12-14%20-%20Jack%20Werth.mp3"
+				data-title="Hosea 4:12-14"
+				data-sub="Evening Service · June 26, 2022">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -512,14 +628,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Hosea 4:15-19"
-			data-audio="https://archive.org/download/2022.07.03.ehosea4.1519jackwerth/2022.07.03.E%20Hosea%204.15-19%20-%20Jack%20Werth.mp3"
-			data-title="Hosea 4:15-19"
-			data-sub="Evening Service · July 3, 2022">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2022.07.03.ehosea4.1519jackwerth"
+				data-passage="Hosea 4:15-19" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Hosea 4:15-19"
+				data-audio="https://archive.org/download/2022.07.03.ehosea4.1519jackwerth/2022.07.03.E%20Hosea%204.15-19%20-%20Jack%20Werth.mp3"
+				data-title="Hosea 4:15-19"
+				data-sub="Evening Service · July 3, 2022">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -533,14 +655,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Hosea 5:1-4"
-			data-audio="https://archive.org/download/2022.07.10.ehosea5.14jackwerth/2022.07.10.E%20Hosea%205.1-4%20-%20Jack%20Werth.mp3"
-			data-title="Hosea 5:1-4"
-			data-sub="Evening Service · July 10, 2022">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2022.07.10.ehosea5.14jackwerth"
+				data-passage="Hosea 5:1-4" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Hosea 5:1-4"
+				data-audio="https://archive.org/download/2022.07.10.ehosea5.14jackwerth/2022.07.10.E%20Hosea%205.1-4%20-%20Jack%20Werth.mp3"
+				data-title="Hosea 5:1-4"
+				data-sub="Evening Service · July 10, 2022">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -554,14 +682,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Hosea 5:5-7"
-			data-audio="https://archive.org/download/2022.07.17.ehosea5.57jackwerth/2022.07.17.E%20Hosea%205.5-7%20-%20Jack%20Werth.mp3"
-			data-title="Hosea 5:5-7"
-			data-sub="Evening Service · July 17, 2022">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2022.07.17.ehosea5.57jackwerth"
+				data-passage="Hosea 5:5-7" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Hosea 5:5-7"
+				data-audio="https://archive.org/download/2022.07.17.ehosea5.57jackwerth/2022.07.17.E%20Hosea%205.5-7%20-%20Jack%20Werth.mp3"
+				data-title="Hosea 5:5-7"
+				data-sub="Evening Service · July 17, 2022">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -575,14 +709,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Hosea 5:8-11"
-			data-audio="https://archive.org/download/2022.07.24.ehosea5.811jackwerth/2022.07.24.E%20Hosea%205.8-11%20-%20Jack%20Werth.mp3"
-			data-title="Hosea 5:8-11"
-			data-sub="Evening Service · July 24, 2022">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2022.07.24.ehosea5.811jackwerth"
+				data-passage="Hosea 5:8-11" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Hosea 5:8-11"
+				data-audio="https://archive.org/download/2022.07.24.ehosea5.811jackwerth/2022.07.24.E%20Hosea%205.8-11%20-%20Jack%20Werth.mp3"
+				data-title="Hosea 5:8-11"
+				data-sub="Evening Service · July 24, 2022">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -596,14 +736,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Hosea 5:12-15"
-			data-audio="https://archive.org/download/2022.08.21.ehosea5.1215jackwerth/2022.08.21.E%20Hosea%205.12-15%20-%20Jack%20Werth.mp3"
-			data-title="Hosea 5:12-15"
-			data-sub="Evening Service · August 21, 2022">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2022.08.21.ehosea5.1215jackwerth"
+				data-passage="Hosea 5:12-15" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Hosea 5:12-15"
+				data-audio="https://archive.org/download/2022.08.21.ehosea5.1215jackwerth/2022.08.21.E%20Hosea%205.12-15%20-%20Jack%20Werth.mp3"
+				data-title="Hosea 5:12-15"
+				data-sub="Evening Service · August 21, 2022">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -617,14 +763,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Hosea 5:14-6.2"
-			data-audio="https://archive.org/download/2022.09.11.ehosea5.146.2jackwerth/2022.09.11.E%20Hosea%205.14-6.2%20-%20Jack%20Werth.mp3"
-			data-title="Hosea 5:14-6.2"
-			data-sub="Evening Service · September 11, 2022">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2022.09.11.ehosea5.146.2jackwerth"
+				data-passage="Hosea 5:14-6.2" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Hosea 5:14-6.2"
+				data-audio="https://archive.org/download/2022.09.11.ehosea5.146.2jackwerth/2022.09.11.E%20Hosea%205.14-6.2%20-%20Jack%20Werth.mp3"
+				data-title="Hosea 5:14-6.2"
+				data-sub="Evening Service · September 11, 2022">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -638,14 +790,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Hosea 6:3"
-			data-audio="https://archive.org/download/2022.09.18.ehosea6.3jackwerth/2022.09.18.E%20Hosea%206.3%20-%20Jack%20Werth.mp3"
-			data-title="Hosea 6:3"
-			data-sub="Evening Service · September 18, 2022">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2022.09.18.ehosea6.3jackwerth"
+				data-passage="Hosea 6:3" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Hosea 6:3"
+				data-audio="https://archive.org/download/2022.09.18.ehosea6.3jackwerth/2022.09.18.E%20Hosea%206.3%20-%20Jack%20Werth.mp3"
+				data-title="Hosea 6:3"
+				data-sub="Evening Service · September 18, 2022">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -659,14 +817,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Hosea 6:4-5"
-			data-audio="https://archive.org/download/2022.09.25.ehosea6.45jackwerth/2022.09.25.E%20Hosea%206.4-5%20-%20Jack%20Werth.mp3"
-			data-title="Hosea 6:4-5"
-			data-sub="Evening Service · September 25, 2022">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2022.09.25.ehosea6.45jackwerth"
+				data-passage="Hosea 6:4-5" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Hosea 6:4-5"
+				data-audio="https://archive.org/download/2022.09.25.ehosea6.45jackwerth/2022.09.25.E%20Hosea%206.4-5%20-%20Jack%20Werth.mp3"
+				data-title="Hosea 6:4-5"
+				data-sub="Evening Service · September 25, 2022">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -680,14 +844,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Hosea 6:6-11"
-			data-audio="https://archive.org/download/2022.10.02.ehosea6.611jackwerth/2022.10.02.E%20Hosea%206.6-11%20-%20Jack%20Werth.mp3"
-			data-title="Hosea 6:6-11"
-			data-sub="Evening Service · October 2, 2022">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2022.10.02.ehosea6.611jackwerth"
+				data-passage="Hosea 6:6-11" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Hosea 6:6-11"
+				data-audio="https://archive.org/download/2022.10.02.ehosea6.611jackwerth/2022.10.02.E%20Hosea%206.6-11%20-%20Jack%20Werth.mp3"
+				data-title="Hosea 6:6-11"
+				data-sub="Evening Service · October 2, 2022">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -701,14 +871,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Hosea 7:1-7"
-			data-audio="https://archive.org/download/2022.10.09.ehosea7.17jackwerth/2022.10.09.E%20Hosea%207.1-7%20-%20Jack%20Werth.mp3"
-			data-title="Hosea 7:1-7"
-			data-sub="Evening Service · October 9, 2022">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2022.10.09.ehosea7.17jackwerth"
+				data-passage="Hosea 7:1-7" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Hosea 7:1-7"
+				data-audio="https://archive.org/download/2022.10.09.ehosea7.17jackwerth/2022.10.09.E%20Hosea%207.1-7%20-%20Jack%20Werth.mp3"
+				data-title="Hosea 7:1-7"
+				data-sub="Evening Service · October 9, 2022">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -722,14 +898,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Hosea 7:8-10"
-			data-audio="https://archive.org/download/2022.10.16.ehosea7.810jackwerth/2022.10.16.E%20Hosea%207.8-10%20-%20Jack%20Werth.mp3"
-			data-title="Hosea 7:8-10"
-			data-sub="Evening Service · October 16, 2022">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2022.10.16.ehosea7.810jackwerth"
+				data-passage="Hosea 7:8-10" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Hosea 7:8-10"
+				data-audio="https://archive.org/download/2022.10.16.ehosea7.810jackwerth/2022.10.16.E%20Hosea%207.8-10%20-%20Jack%20Werth.mp3"
+				data-title="Hosea 7:8-10"
+				data-sub="Evening Service · October 16, 2022">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -743,14 +925,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Hosea 7:11-16"
-			data-audio="https://archive.org/download/2022.10.23.ehosea7.1116jackwerth/2022.10.23.E%20Hosea%207.11-16%20-%20Jack%20Werth.mp3"
-			data-title="Hosea 7:11-16"
-			data-sub="Evening Service · October 23, 2022">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2022.10.23.ehosea7.1116jackwerth"
+				data-passage="Hosea 7:11-16" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Hosea 7:11-16"
+				data-audio="https://archive.org/download/2022.10.23.ehosea7.1116jackwerth/2022.10.23.E%20Hosea%207.11-16%20-%20Jack%20Werth.mp3"
+				data-title="Hosea 7:11-16"
+				data-sub="Evening Service · October 23, 2022">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -764,14 +952,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Hosea 8:1-3"
-			data-audio="https://archive.org/download/2022.10.30.ehosea8.13jackwerth/2022.10.30.E%20Hosea%208.1-3%20-%20Jack%20Werth.mp3"
-			data-title="Hosea 8:1-3"
-			data-sub="Evening Service · October 30, 2022">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2022.10.30.ehosea8.13jackwerth"
+				data-passage="Hosea 8:1-3" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Hosea 8:1-3"
+				data-audio="https://archive.org/download/2022.10.30.ehosea8.13jackwerth/2022.10.30.E%20Hosea%208.1-3%20-%20Jack%20Werth.mp3"
+				data-title="Hosea 8:1-3"
+				data-sub="Evening Service · October 30, 2022">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -785,14 +979,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Hosea 8:4-7"
-			data-audio="https://archive.org/download/2022.11.06.ehosea8.47jackwerth/2022.11.06.E%20Hosea%208.4-7%20-%20Jack%20Werth.mp3"
-			data-title="Hosea 8:4-7"
-			data-sub="Evening Service · November 6, 2022">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2022.11.06.ehosea8.47jackwerth"
+				data-passage="Hosea 8:4-7" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Hosea 8:4-7"
+				data-audio="https://archive.org/download/2022.11.06.ehosea8.47jackwerth/2022.11.06.E%20Hosea%208.4-7%20-%20Jack%20Werth.mp3"
+				data-title="Hosea 8:4-7"
+				data-sub="Evening Service · November 6, 2022">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -806,14 +1006,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Hosea 8:8-10"
-			data-audio="https://archive.org/download/2022.11.13.ehosea8.810jackwerth/2022.11.13.E%20Hosea%208.8-10%20-%20Jack%20Werth.mp3"
-			data-title="Hosea 8:8-10"
-			data-sub="Evening Service · November 13, 2022">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2022.11.13.ehosea8.810jackwerth"
+				data-passage="Hosea 8:8-10" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Hosea 8:8-10"
+				data-audio="https://archive.org/download/2022.11.13.ehosea8.810jackwerth/2022.11.13.E%20Hosea%208.8-10%20-%20Jack%20Werth.mp3"
+				data-title="Hosea 8:8-10"
+				data-sub="Evening Service · November 13, 2022">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -827,14 +1033,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Hosea 8:11-14"
-			data-audio="https://archive.org/download/2022.11.20.ehosea8.1114jackwerth/2022.11.20.E%20Hosea%208.11-14%20-%20Jack%20Werth.mp3"
-			data-title="Hosea 8:11-14"
-			data-sub="Evening Service · November 20, 2022">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2022.11.20.ehosea8.1114jackwerth"
+				data-passage="Hosea 8:11-14" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Hosea 8:11-14"
+				data-audio="https://archive.org/download/2022.11.20.ehosea8.1114jackwerth/2022.11.20.E%20Hosea%208.11-14%20-%20Jack%20Werth.mp3"
+				data-title="Hosea 8:11-14"
+				data-sub="Evening Service · November 20, 2022">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -848,14 +1060,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Hosea 9:1-6"
-			data-audio="https://archive.org/download/2022.11.27.ehosea9.16jackwerth/2022.11.27.E%20Hosea%209.1-6%20-%20Jack%20Werth.mp3"
-			data-title="Hosea 9:1-6"
-			data-sub="Evening Service · November 27, 2022">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2022.11.27.ehosea9.16jackwerth"
+				data-passage="Hosea 9:1-6" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Hosea 9:1-6"
+				data-audio="https://archive.org/download/2022.11.27.ehosea9.16jackwerth/2022.11.27.E%20Hosea%209.1-6%20-%20Jack%20Werth.mp3"
+				data-title="Hosea 9:1-6"
+				data-sub="Evening Service · November 27, 2022">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -869,14 +1087,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Hosea 9:7-9"
-			data-audio="https://archive.org/download/2022.12.04.ehosea9.79jackwerth/2022.12.04.E%20Hosea%209.7-9%20-%20Jack%20Werth.mp3"
-			data-title="Hosea 9:7-9"
-			data-sub="Evening Service · December 4, 2022">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2022.12.04.ehosea9.79jackwerth"
+				data-passage="Hosea 9:7-9" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Hosea 9:7-9"
+				data-audio="https://archive.org/download/2022.12.04.ehosea9.79jackwerth/2022.12.04.E%20Hosea%209.7-9%20-%20Jack%20Werth.mp3"
+				data-title="Hosea 9:7-9"
+				data-sub="Evening Service · December 4, 2022">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -890,14 +1114,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Hosea 9:10-17"
-			data-audio="https://archive.org/download/2022.12.11.ehosea9.1017jackwerth/2022.12.11.E%20Hosea%209.10-17%20-%20Jack%20Werth.mp3"
-			data-title="Hosea 9:10-17"
-			data-sub="Evening Service · December 11, 2022">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2022.12.11.ehosea9.1017jackwerth"
+				data-passage="Hosea 9:10-17" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Hosea 9:10-17"
+				data-audio="https://archive.org/download/2022.12.11.ehosea9.1017jackwerth/2022.12.11.E%20Hosea%209.10-17%20-%20Jack%20Werth.mp3"
+				data-title="Hosea 9:10-17"
+				data-sub="Evening Service · December 11, 2022">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -911,14 +1141,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Hosea 10:1-2"
-			data-audio="https://archive.org/download/2022.12.18.ehosea10.12jackwerth/2022.12.18.E%20Hosea%2010.1-2%20-%20Jack%20Werth.mp3"
-			data-title="Hosea 10:1-2"
-			data-sub="Evening Service · December 18, 2022">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2022.12.18.ehosea10.12jackwerth"
+				data-passage="Hosea 10:1-2" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Hosea 10:1-2"
+				data-audio="https://archive.org/download/2022.12.18.ehosea10.12jackwerth/2022.12.18.E%20Hosea%2010.1-2%20-%20Jack%20Werth.mp3"
+				data-title="Hosea 10:1-2"
+				data-sub="Evening Service · December 18, 2022">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -932,14 +1168,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Hosea 10:3-8"
-			data-audio="https://archive.org/download/2022.12.25.ehosea10.38jackwerth/2022.12.25.E%20Hosea%2010.3-8%20-%20Jack%20Werth.mp3"
-			data-title="Hosea 10:3-8"
-			data-sub="Evening Service · December 25, 2022">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2022.12.25.ehosea10.38jackwerth"
+				data-passage="Hosea 10:3-8" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Hosea 10:3-8"
+				data-audio="https://archive.org/download/2022.12.25.ehosea10.38jackwerth/2022.12.25.E%20Hosea%2010.3-8%20-%20Jack%20Werth.mp3"
+				data-title="Hosea 10:3-8"
+				data-sub="Evening Service · December 25, 2022">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -953,14 +1195,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Hosea 10:9-10"
-			data-audio="https://archive.org/download/2023.01.01.ehosea10.910jackwerth/2023.01.01.E%20Hosea%2010.9-10%20-%20Jack%20Werth.mp3"
-			data-title="Hosea 10:9-10"
-			data-sub="Evening Service · January 1, 2023">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2023.01.01.ehosea10.910jackwerth"
+				data-passage="Hosea 10:9-10" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Hosea 10:9-10"
+				data-audio="https://archive.org/download/2023.01.01.ehosea10.910jackwerth/2023.01.01.E%20Hosea%2010.9-10%20-%20Jack%20Werth.mp3"
+				data-title="Hosea 10:9-10"
+				data-sub="Evening Service · January 1, 2023">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -974,14 +1222,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Hosea 10:11-15"
-			data-audio="https://archive.org/download/2023.01.08.ehosea10.1115jackwerth/2023.01.08.E%20Hosea%2010.11-15%20-%20Jack%20Werth.mp3"
-			data-title="Hosea 10:11-15"
-			data-sub="Evening Service · January 8, 2023">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2023.01.08.ehosea10.1115jackwerth"
+				data-passage="Hosea 10:11-15" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Hosea 10:11-15"
+				data-audio="https://archive.org/download/2023.01.08.ehosea10.1115jackwerth/2023.01.08.E%20Hosea%2010.11-15%20-%20Jack%20Werth.mp3"
+				data-title="Hosea 10:11-15"
+				data-sub="Evening Service · January 8, 2023">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -995,14 +1249,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Hosea 11:1-4"
-			data-audio="https://archive.org/download/2023.01.15.ehosea11.14jackwerth/2023.01.15.E%20Hosea%2011.1-4%20-%20Jack%20Werth.mp3"
-			data-title="Hosea 11:1-4"
-			data-sub="Evening Service · January 15, 2023">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2023.01.15.ehosea11.14jackwerth"
+				data-passage="Hosea 11:1-4" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Hosea 11:1-4"
+				data-audio="https://archive.org/download/2023.01.15.ehosea11.14jackwerth/2023.01.15.E%20Hosea%2011.1-4%20-%20Jack%20Werth.mp3"
+				data-title="Hosea 11:1-4"
+				data-sub="Evening Service · January 15, 2023">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -1016,14 +1276,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Hosea 11:2-7"
-			data-audio="https://archive.org/download/2023.01.22.ehosea11.27jackwerth/2023.01.22.E%20Hosea%2011.2-7%20-%20Jack%20Werth.mp3"
-			data-title="Hosea 11:2-7"
-			data-sub="Evening Service · January 22, 2023">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2023.01.22.ehosea11.27jackwerth"
+				data-passage="Hosea 11:2-7" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Hosea 11:2-7"
+				data-audio="https://archive.org/download/2023.01.22.ehosea11.27jackwerth/2023.01.22.E%20Hosea%2011.2-7%20-%20Jack%20Werth.mp3"
+				data-title="Hosea 11:2-7"
+				data-sub="Evening Service · January 22, 2023">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -1037,14 +1303,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Hosea 11:8-11"
-			data-audio="https://archive.org/download/2023.02.05.ehosea11.811jackwerth/2023.02.05.E%20Hosea%2011.8-11%20-%20Jack%20Werth.mp3"
-			data-title="Hosea 11:8-11"
-			data-sub="Evening Service · February 5, 2023">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2023.02.05.ehosea11.811jackwerth"
+				data-passage="Hosea 11:8-11" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Hosea 11:8-11"
+				data-audio="https://archive.org/download/2023.02.05.ehosea11.811jackwerth/2023.02.05.E%20Hosea%2011.8-11%20-%20Jack%20Werth.mp3"
+				data-title="Hosea 11:8-11"
+				data-sub="Evening Service · February 5, 2023">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -1058,14 +1330,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Hosea 11:12-12.6"
-			data-audio="https://archive.org/download/2023.02.12.ehosea11.1212.6jackwerth/2023.02.12.E%20Hosea%2011.12-12.6%20-%20Jack%20Werth.mp3"
-			data-title="Hosea 11:12-12.6"
-			data-sub="Evening Service · February 12, 2023">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2023.02.12.ehosea11.1212.6jackwerth"
+				data-passage="Hosea 11:12-12.6" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Hosea 11:12-12.6"
+				data-audio="https://archive.org/download/2023.02.12.ehosea11.1212.6jackwerth/2023.02.12.E%20Hosea%2011.12-12.6%20-%20Jack%20Werth.mp3"
+				data-title="Hosea 11:12-12.6"
+				data-sub="Evening Service · February 12, 2023">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -1079,14 +1357,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Hosea 12:7-14"
-			data-audio="https://archive.org/download/2023.02.19.ehosea12.714jackwerth/2023.02.19.E%20Hosea%2012.7-14%20-%20Jack%20Werth.mp3"
-			data-title="Hosea 12:7-14"
-			data-sub="Evening Service · February 19, 2023">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2023.02.19.ehosea12.714jackwerth"
+				data-passage="Hosea 12:7-14" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Hosea 12:7-14"
+				data-audio="https://archive.org/download/2023.02.19.ehosea12.714jackwerth/2023.02.19.E%20Hosea%2012.7-14%20-%20Jack%20Werth.mp3"
+				data-title="Hosea 12:7-14"
+				data-sub="Evening Service · February 19, 2023">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -1100,14 +1384,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Hosea 13:1-4"
-			data-audio="https://archive.org/download/2023.02.26.ehosea13.14jackwerth/2023.02.26.E%20Hosea%2013.1-4%20-%20Jack%20Werth.mp3"
-			data-title="Hosea 13:1-4"
-			data-sub="Evening Service · February 26, 2023">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2023.02.26.ehosea13.14jackwerth"
+				data-passage="Hosea 13:1-4" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Hosea 13:1-4"
+				data-audio="https://archive.org/download/2023.02.26.ehosea13.14jackwerth/2023.02.26.E%20Hosea%2013.1-4%20-%20Jack%20Werth.mp3"
+				data-title="Hosea 13:1-4"
+				data-sub="Evening Service · February 26, 2023">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -1121,14 +1411,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Hosea 13:5-8"
-			data-audio="https://archive.org/download/2023.03.05.ehosea13.58jackwerth/2023.03.05.E%20Hosea%2013.5-8%20-%20Jack%20Werth.mp3"
-			data-title="Hosea 13:5-8"
-			data-sub="Evening Service · March 5, 2023">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2023.03.05.ehosea13.58jackwerth"
+				data-passage="Hosea 13:5-8" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Hosea 13:5-8"
+				data-audio="https://archive.org/download/2023.03.05.ehosea13.58jackwerth/2023.03.05.E%20Hosea%2013.5-8%20-%20Jack%20Werth.mp3"
+				data-title="Hosea 13:5-8"
+				data-sub="Evening Service · March 5, 2023">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -1142,14 +1438,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Hosea 13:9-11"
-			data-audio="https://archive.org/download/2023.03.12.ehosea13.911jackwerth/2023.03.12.E%20Hosea%2013.9-11%20-%20Jack%20Werth.mp3"
-			data-title="Hosea 13:9-11"
-			data-sub="Evening Service · March 12, 2023">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2023.03.12.ehosea13.911jackwerth"
+				data-passage="Hosea 13:9-11" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Hosea 13:9-11"
+				data-audio="https://archive.org/download/2023.03.12.ehosea13.911jackwerth/2023.03.12.E%20Hosea%2013.9-11%20-%20Jack%20Werth.mp3"
+				data-title="Hosea 13:9-11"
+				data-sub="Evening Service · March 12, 2023">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -1163,14 +1465,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Hosea 13:12-16"
-			data-audio="https://archive.org/download/2023.03.19.ehosea13.1216jackwerth/2023.03.19.E%20Hosea%2013.12-16%20-%20Jack%20Werth.mp3"
-			data-title="Hosea 13:12-16"
-			data-sub="Evening Service · March 19, 2023">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2023.03.19.ehosea13.1216jackwerth"
+				data-passage="Hosea 13:12-16" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Hosea 13:12-16"
+				data-audio="https://archive.org/download/2023.03.19.ehosea13.1216jackwerth/2023.03.19.E%20Hosea%2013.12-16%20-%20Jack%20Werth.mp3"
+				data-title="Hosea 13:12-16"
+				data-sub="Evening Service · March 19, 2023">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -1184,14 +1492,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Hosea 13:14"
-			data-audio="https://archive.org/download/2023.04.02.ehosea13.14jackwerth/2023.04.02.E%20Hosea%2013.14%20-%20Jack%20Werth.mp3"
-			data-title="Hosea 13:14"
-			data-sub="Evening Service · April 2, 2023">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2023.04.02.ehosea13.14jackwerth"
+				data-passage="Hosea 13:14" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Hosea 13:14"
+				data-audio="https://archive.org/download/2023.04.02.ehosea13.14jackwerth/2023.04.02.E%20Hosea%2013.14%20-%20Jack%20Werth.mp3"
+				data-title="Hosea 13:14"
+				data-sub="Evening Service · April 2, 2023">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -1205,14 +1519,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Hosea 14:1-3"
-			data-audio="https://archive.org/download/2023.04.29.ehosea14.13jackwerth/2023.04.09.E%20Hosea%2014.1-3%20-%20Jack%20Werth.mp3"
-			data-title="Hosea 14:1-3"
-			data-sub="Evening Service · April 9, 2023">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2023.04.29.ehosea14.13jackwerth"
+				data-passage="Hosea 14:1-3" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Hosea 14:1-3"
+				data-audio="https://archive.org/download/2023.04.29.ehosea14.13jackwerth/2023.04.09.E%20Hosea%2014.1-3%20-%20Jack%20Werth.mp3"
+				data-title="Hosea 14:1-3"
+				data-sub="Evening Service · April 9, 2023">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -1226,14 +1546,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Hosea 14:4"
-			data-audio="https://archive.org/download/2023.04.16.ehosea14.4jackwerth/2023.04.16.E%20Hosea%2014.4%20-%20Jack%20Werth.mp3"
-			data-title="Hosea 14:4"
-			data-sub="Evening Service · April 16, 2023">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2023.04.16.ehosea14.4jackwerth"
+				data-passage="Hosea 14:4" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Hosea 14:4"
+				data-audio="https://archive.org/download/2023.04.16.ehosea14.4jackwerth/2023.04.16.E%20Hosea%2014.4%20-%20Jack%20Werth.mp3"
+				data-title="Hosea 14:4"
+				data-sub="Evening Service · April 16, 2023">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -1247,14 +1573,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Hosea 14:5-7"
-			data-audio="https://archive.org/download/2023.04.23.ehosea14.57jackwerth/2023.04.23.E%20Hosea%2014.5-7%20-%20Jack%20Werth.mp3"
-			data-title="Hosea 14:5-7"
-			data-sub="Evening Service · April 23, 2023">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2023.04.23.ehosea14.57jackwerth"
+				data-passage="Hosea 14:5-7" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Hosea 14:5-7"
+				data-audio="https://archive.org/download/2023.04.23.ehosea14.57jackwerth/2023.04.23.E%20Hosea%2014.5-7%20-%20Jack%20Werth.mp3"
+				data-title="Hosea 14:5-7"
+				data-sub="Evening Service · April 23, 2023">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 <article class="scard reveal">
 	<div class="top">
@@ -1268,14 +1600,20 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	
 	<div class="foot">
 		<span class="svc">Evening Service</span>
-				<button class="play" aria-label="Play Hosea 14:8-9"
-			data-audio="https://archive.org/download/2023.05.07.ehosea14.89jackwerth/2023.05.07.E%20Hosea%2014.8-9%20-%20Jack%20Werth.mp3"
-			data-title="Hosea 14:8-9"
-			data-sub="Evening Service · May 7, 2023">
-			<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-			<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
-		</button>
-			</div>
+		<div class="card-actions">
+						<button class="heart" data-heart data-sermon="2023.05.07.ehosea14.89jackwerth"
+				data-passage="Hosea 14:8-9" aria-label="Save to favorites" aria-pressed="false">
+				<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>
+			</button>
+									<button class="play" aria-label="Play Hosea 14:8-9"
+				data-audio="https://archive.org/download/2023.05.07.ehosea14.89jackwerth/2023.05.07.E%20Hosea%2014.8-9%20-%20Jack%20Werth.mp3"
+				data-title="Hosea 14:8-9"
+				data-sub="Evening Service · May 7, 2023">
+				<svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				<svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+			</button>
+					</div>
+	</div>
 </article>
 		</div>
 		<div class="pagination"></div>
@@ -1325,8 +1663,15 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 var JW = {"index":"https://werth-code.github.io/jack-werth-sermons/sermons-index.json","archive":"https://werth-code.github.io/jack-werth-sermons/sermons/"};
 //# sourceURL=jw-app-js-extra
 </script>
-<script id="jw-app-js" src="https://werth-code.github.io/jack-werth-sermons/wp-content/themes/jackwerth/assets/js/app.js?ver=1.0.9"></script>
-<script id="jw-player-js" src="https://werth-code.github.io/jack-werth-sermons/wp-content/themes/jackwerth/assets/js/player.js?ver=1.0.9"></script>
+<script id="jw-app-js" src="https://werth-code.github.io/jack-werth-sermons/wp-content/themes/jackwerth/assets/js/app.js?ver=1.1.0"></script>
+<script id="jw-player-js" src="https://werth-code.github.io/jack-werth-sermons/wp-content/themes/jackwerth/assets/js/player.js?ver=1.1.0"></script>
+<script id="supabase-js-js" src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script id="jw-config-js" src="https://werth-code.github.io/jack-werth-sermons/wp-content/themes/jackwerth/assets/js/jw-config.js?ver=1.1.0"></script>
+<script id="jw-config-js-after">
+window.JW_HOME="https:\/\/werth-code.github.io\/jack-werth-sermons\/";
+//# sourceURL=jw-config-js-after
+</script>
+<script id="jw-account-js" src="https://werth-code.github.io/jack-werth-sermons/wp-content/themes/jackwerth/assets/js/account.js?ver=1.1.0"></script>
 <script id="wp-emoji-settings" type="application/json">
 {"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"https://werth-code.github.io/jack-werth-sermons/wp-includes/js/wp-emoji-release.min.js?ver=7.0"}}
 </script>

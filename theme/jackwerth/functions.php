@@ -5,7 +5,7 @@
  */
 if ( ! defined( 'ABSPATH' ) ) { exit; }
 
-define( 'JW_THEME_VER', '1.0.9' );
+define( 'JW_THEME_VER', '1.1.0' );
 
 /* ------------------------------------------------------------------ setup */
 add_action( 'after_setup_theme', function () {
@@ -42,6 +42,12 @@ add_action( 'wp_enqueue_scripts', function () {
 		'rest'    => esc_url_raw( rest_url( 'jw/v1/sermons' ) ),
 		'archive' => get_post_type_archive_link( 'sermon' ),
 	] );
+
+	// Accounts (Supabase): client SDK from CDN + config + engine.
+	wp_enqueue_script( 'supabase-js', 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2', [], null, true );
+	wp_enqueue_script( 'jw-config', get_stylesheet_directory_uri() . '/assets/js/jw-config.js', [], JW_THEME_VER, true );
+	wp_add_inline_script( 'jw-config', 'window.JW_HOME=' . wp_json_encode( home_url( '/' ) ) . ';', 'after' );
+	wp_enqueue_script( 'jw-account', get_stylesheet_directory_uri() . '/assets/js/account.js', [ 'supabase-js', 'jw-config' ], JW_THEME_VER, true );
 } );
 
 add_filter( 'preconnect', fn() => null );

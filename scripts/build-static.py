@@ -68,6 +68,7 @@ while True:
     data = json.loads(get(f"{LOCAL}/wp-json/jw/v1/sermons?page={page}"))
     for it in data["items"]:
         index.append({
+            "id": it.get("archive_id", ""),
             "passage": it["passage"], "book": it["book"], "bookSlug": slugify(it["book"]),
             "year": int((it["date"] or "0")[:4] or 0), "date": it["date"],
             "service": it["service"], "serviceSlug": slugify(it["service"]),
