@@ -6,6 +6,7 @@ Liberty Baptist Church Reformed archive, searchable by date, book of the Bible,
 and content, and built to serve pastors preparing to preach and believers going
 deeper into Scripture.
 
+**Live site:** https://werth-code.github.io/jack-werth-sermons/ (static snapshot on GitHub Pages; audio streams from archive.org)
 Local dev URL: **http://localhost:8091** · Admin: **/wp-admin** — credentials in `CREDENTIALS.local.md` (gitignored, not published)
 
 ---
@@ -97,6 +98,22 @@ DEST=/Volumes/Backup ./scripts/download-audio.sh   # to an external drive
 ```
 
 ---
+
+## Publishing updates to the live site
+
+The public site is a **static snapshot** on GitHub Pages (WordPress can't run there).
+After you add transcripts or new sermons (and re-import), refresh the public site with:
+
+```bash
+./scripts/publish.sh        # re-snapshots docs/, commits, pushes; Pages rebuilds in ~1–2 min
+```
+
+`scripts/build-static.py` does the snapshot (crawls the local site, rewrites URLs to the
+Pages domain, builds the client-side search index). The live faceted search runs entirely
+in the browser from `sermons-index.json`; audio streams from archive.org.
+
+> If a page looks stale after publishing, hard-refresh (Cmd+Shift+R) — GitHub Pages and the
+> browser cache HTML for a few minutes.
 
 ## Selling resources (when ready)
 
