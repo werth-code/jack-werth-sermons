@@ -91,7 +91,7 @@
       : '';
     var sid = it.archive_id || it.id;
     var heartBtn = sid
-      ? '<button class="heart" data-heart data-sermon="' + esc(sid) + '" data-passage="' + esc(it.passage || it.title) + '" aria-label="Save to favorites" aria-pressed="false"><svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg></button>'
+      ? '<button class="heart" data-heart data-sermon="' + esc(sid) + '" data-passage="' + esc(it.passage || it.title) + '" aria-label="Save to favorites" aria-pressed="false"><svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg></button>'
       : '';
     return '<article class="scard reveal in">' +
         '<div class="top">' + bookTag + '<span class="date">' + esc(d) + '</span></div>' +

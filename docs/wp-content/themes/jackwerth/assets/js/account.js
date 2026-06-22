@@ -154,7 +154,7 @@
       '<div class="foot"><span class="svc">' + esc(it.service || '') + '</span>' +
         '<div class="card-actions">' +
           '<button class="heart on" data-heart data-sermon="' + esc(it.id) + '" data-passage="' + esc(it.passage) + '" aria-label="Favorite">' +
-            '<svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.2C.6 9 1.6 5.7 4.6 5c1.9-.4 3.6.5 4.4 2 .8-1.5 2.5-2.4 4.4-2 3 .7 4 4 2.6 6.8C19.5 16.4 12 21 12 21z"/></svg>' +
+            '<svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>' +
           '</button>' +
           (it.audio ? '<button class="play" data-audio="' + esc(it.audio) + '" data-title="' + esc(it.passage) + '" data-sub="' + esc((it.service || '') + ' · ' + d) + '"><svg class="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg><svg class="i-pause" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg></button>' : '') +
         '</div>' +

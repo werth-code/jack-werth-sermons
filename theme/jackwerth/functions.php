@@ -5,7 +5,7 @@
  */
 if ( ! defined( 'ABSPATH' ) ) { exit; }
 
-define( 'JW_THEME_VER', '1.1.0' );
+define( 'JW_THEME_VER', '1.1.1' );
 
 /* ------------------------------------------------------------------ setup */
 add_action( 'after_setup_theme', function () {
@@ -24,6 +24,13 @@ add_action( 'after_setup_theme', function () {
 	] );
 
 	add_image_size( 'jw_card', 800, 500, true );
+
+	// Trim WP <head> cruft (REST/oEmbed/RSD/wlwmanifest discovery links). Cleaner output,
+	// and removes the only (URL-encoded) localhost reference left in the static markup.
+	remove_action( 'wp_head', 'rest_output_link_wp_head' );
+	remove_action( 'wp_head', 'wp_oembed_add_discovery_links' );
+	remove_action( 'wp_head', 'rsd_link' );
+	remove_action( 'wp_head', 'wlwmanifest_link' );
 } );
 
 /* --------------------------------------------------------------- assets */
