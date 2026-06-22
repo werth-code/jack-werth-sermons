@@ -39,6 +39,14 @@
   window.addEventListener('load', function () { setTimeout(checkReveal, 50); });
   setTimeout(function () { revealEls.forEach(show); revealEls.length = 0; }, 2500); // ultimate safety net
 
+  // ---- contact: reveal success after FormSubmit redirects back with ?sent=1 ----
+  var sent = document.querySelector('[data-sent]');
+  if (sent && /[?&]sent=1/.test(location.search)) {
+    sent.hidden = false;
+    var cf = document.querySelector('[data-contact]'); if (cf) cf.style.display = 'none';
+    sent.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }
+
   // ---- live faceted search ------------------------------------------------
   var form = document.querySelector('[data-filter]');
   if (!form || typeof JW === 'undefined') return;
