@@ -103,10 +103,10 @@
     $('[data-seek] .fill').style.width = pct + '%';
     $('[data-seek] .head').style.left = pct + '%';
     $('[data-cur]').textContent = fmt(audio.currentTime);
-    // mirror onto feature player if present
-    var ff = document.querySelector('[data-feature-seek] .fill');
-    if (ff && currentSrc === (document.querySelector('[data-feature]') || {}).getAttribute && currentSrc === document.querySelector('[data-feature]').getAttribute('data-audio')) {
-      ff.style.width = pct + '%';
+    // mirror onto the inline feature player when it's the one playing
+    var feat = document.querySelector('[data-feature]');
+    if (feat && currentSrc === feat.getAttribute('data-audio')) {
+      var ff = document.querySelector('[data-feature-seek] .fill'); if (ff) ff.style.width = pct + '%';
       var fh = document.querySelector('[data-feature-seek] .head'); if (fh) fh.style.left = pct + '%';
       var fc = document.querySelector('[data-feature-cur]'); if (fc) fc.textContent = fmt(audio.currentTime);
       var fd = document.querySelector('[data-feature-dur]'); if (fd) fd.textContent = fmt(audio.duration);

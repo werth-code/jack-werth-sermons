@@ -5,7 +5,7 @@
  */
 if ( ! defined( 'ABSPATH' ) ) { exit; }
 
-define( 'JW_THEME_VER', '1.0.5' );
+define( 'JW_THEME_VER', '1.0.6' );
 
 /* ------------------------------------------------------------------ setup */
 add_action( 'after_setup_theme', function () {
