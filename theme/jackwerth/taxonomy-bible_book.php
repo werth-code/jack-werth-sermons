@@ -18,6 +18,14 @@ $testL= [ 'OT' => 'Old Testament', 'NT' => 'New Testament' ][ $test ] ?? '';
 		<p class="lede"><b style="color:var(--brass)"><?php echo esc_html( $term->count ); ?></b>
 			sermon<?php echo $term->count == 1 ? '' : 's'; ?> working through <?php echo esc_html( $term->name ); ?>,
 			in order — listen straight through as a study of the whole book.</p>
+		<?php if ( $term->count > 1 ) : ?>
+		<p style="margin-top:1.5rem">
+			<button class="btn playall" data-playall type="button">
+				<svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+				Play <?php echo esc_html( $term->name ); ?> in Order
+			</button>
+		</p>
+		<?php endif; ?>
 	</div>
 </section>
 

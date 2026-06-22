@@ -39,6 +39,16 @@
   window.addEventListener('load', function () { setTimeout(checkReveal, 50); });
   setTimeout(function () { revealEls.forEach(show); revealEls.length = 0; }, 2500); // ultimate safety net
 
+  // ---- "Play All": queue every sermon card on the page, in display order ----
+  document.addEventListener('click', function (e) {
+    var b = e.target.closest('[data-playall]');
+    if (!b) return;
+    var items = [].map.call(document.querySelectorAll('.card-grid .scard .play[data-audio]'), function (p) {
+      return { audio: p.getAttribute('data-audio'), title: p.getAttribute('data-title'), sub: p.getAttribute('data-sub') };
+    });
+    if (items.length && window.jwQueue) window.jwQueue(items, 0);
+  });
+
   // ---- contact: reveal success after FormSubmit redirects back with ?sent=1 ----
   var sent = document.querySelector('[data-sent]');
   if (sent && /[?&]sent=1/.test(location.search)) {
@@ -184,6 +194,17 @@
   form.addEventListener('submit', function (e) { e.preventDefault(); run(); });
   var reset = form.querySelector('[data-reset]');
   if (reset) reset.addEventListener('click', function () { fields.forEach(function (el) { el.value = ''; }); run(); });
+
+  // "Play All" on the search archive — queue ALL current matches (not just the loaded page).
+  var playAll = document.querySelector('[data-playall-index]');
+  if (playAll) playAll.addEventListener('click', function () {
+    withIndex(function (all) {
+      var items = filterIndex(all, filters()).map(function (it) {
+        return { audio: it.audio, title: it.passage, sub: (it.service || '') + ' · ' + (it.date || '') };
+      });
+      if (items.length && window.jwQueue) window.jwQueue(items, 0);
+    });
+  });
 
   // Static export: render from the JSON index on load, honoring any ?book=/?year= in the URL,
   // and replace the server-rendered cards + (now-dead) pagination links.

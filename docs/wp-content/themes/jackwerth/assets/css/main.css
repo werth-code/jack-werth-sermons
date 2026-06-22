@@ -414,3 +414,19 @@ strong{ font-weight:600; color:var(--ivory); }
 .contact-success h3{ margin:.2rem 0 .6rem; }
 .contact-success p{ color:var(--muted); margin:0; }
 @media (max-width:600px){ .contact-form .cf-row{ grid-template-columns:1fr; } }
+
+/* --------------------------------------------------------------- queue / play-all */
+.jw-player .transport{ display:flex; align-items:center; gap:.35rem; }
+.jw-player .qbtn{ background:none; border:0; color:var(--muted); width:32px; height:32px;
+  display:none; place-items:center; border-radius:50%; transition:color .2s; }
+.jw-player.has-queue .qbtn{ display:grid; }
+.jw-player .qbtn:hover:not(:disabled){ color:var(--ivory); }
+.jw-player .qbtn:disabled{ opacity:.28; cursor:default; }
+.jw-player .qbtn svg{ width:17px; height:17px; }
+.jw-player .qpos{ color:var(--brass); font-family:var(--mono); }
+
+.results-head{ display:flex; align-items:center; justify-content:space-between; gap:1rem; flex-wrap:wrap; margin-bottom:1.3rem; }
+.results-head .result-count{ margin-bottom:0; }
+.playall{ white-space:nowrap; }
+.playall svg{ width:1em; height:1em; margin-right:.1em; }
+@media (max-width:560px){ .jw-player .transport .qbtn{ width:28px; height:28px; } }

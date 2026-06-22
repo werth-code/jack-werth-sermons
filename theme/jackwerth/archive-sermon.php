@@ -64,8 +64,13 @@ $action = get_post_type_archive_link( 'sermon' );
 			<noscript><div style="margin-top:.8rem"><button class="btn" type="submit">Search</button></div></noscript>
 		</form>
 
-		<div class="result-count" data-count>
-			<b><?php echo esc_html( number_format_i18n( $GLOBALS['wp_query']->found_posts ) ); ?></b> sermon<?php echo $GLOBALS['wp_query']->found_posts == 1 ? '' : 's'; ?> found
+		<div class="results-head">
+			<div class="result-count" data-count>
+				<b><?php echo esc_html( number_format_i18n( $GLOBALS['wp_query']->found_posts ) ); ?></b> sermon<?php echo $GLOBALS['wp_query']->found_posts == 1 ? '' : 's'; ?> found
+			</div>
+			<button class="btn btn--ghost playall" data-playall-index type="button" aria-label="Play all results in order">
+				<svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg> Play All in Order
+			</button>
 		</div>
 
 		<div class="card-grid" data-results>
