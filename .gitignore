@@ -1,0 +1,16 @@
+# Local MP3 backups (large — keep out of version control)
+audio/
+*.mp3
+
+# WordPress core/runtime lives in the Docker volume, not the repo
+# (only plugin/, theme/, data/, scripts/ are source)
+
+# Secrets — never publish
+CREDENTIALS.local.md
+
+# OS / editor cruft
+.DS_Store
+*.log
+data/transcripts/*.txt
+data/transcripts/*.md
+!data/transcripts/_EXAMPLE*

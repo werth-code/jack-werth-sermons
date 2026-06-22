@@ -1,0 +1,13 @@
+/*
+Theme Name: Jack Werth — Midnight Study
+Theme URI: https://lbref.org/
+Author: Sermon Library
+Description: A reverent, lamplit library theme for the expository, verse-by-verse preaching of Pastor Jack Werth. Built for deep study — searchable by date, book of the Bible, and content; SEO-ready; and WooCommerce-ready for selling outlines and books.
+Version: 1.0.0
+Requires at least: 6.4
+Requires PHP: 8.0
+License: GPL-2.0-or-later
+Text Domain: jackwerth
+*/
+
+/* Real styles live in assets/css/main.css (enqueued in functions.php). */

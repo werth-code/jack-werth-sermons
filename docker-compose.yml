@@ -1,0 +1,56 @@
+# Isolated local WordPress dev env for the Jack Werth sermon library.
+# Localhost-only, independent of any live/production site.
+services:
+  db:
+    image: mariadb:11
+    container_name: jw-db
+    restart: unless-stopped
+    environment:
+      MARIADB_DATABASE: wordpress
+      MARIADB_USER: wp
+      MARIADB_PASSWORD: wppass
+      MARIADB_ROOT_PASSWORD: rootpass
+    volumes:
+      - db_data:/var/lib/mysql
+
+  wordpress:
+    image: wordpress:php8.3-apache
+    container_name: jw-wordpress
+    depends_on: [db]
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:8091:80"
+    environment:
+      WORDPRESS_DB_HOST: db
+      WORDPRESS_DB_USER: wp
+      WORDPRESS_DB_PASSWORD: wppass
+      WORDPRESS_DB_NAME: wordpress
+      WORDPRESS_DEBUG: "1"
+    volumes:
+      - wp_data:/var/www/html
+      - ./theme/jackwerth:/var/www/html/wp-content/themes/jackwerth
+      - ./plugin/jw-sermon-library:/var/www/html/wp-content/plugins/jw-sermon-library
+      - ./data:/var/www/html/wp-content/jw-data
+      - ./scripts:/var/www/html/wp-content/jw-scripts
+
+  wpcli:
+    image: wordpress:cli-php8.3
+    container_name: jw-wpcli
+    depends_on: [db, wordpress]
+    user: "33:33"
+    environment:
+      WORDPRESS_DB_HOST: db
+      WORDPRESS_DB_USER: wp
+      WORDPRESS_DB_PASSWORD: wppass
+      WORDPRESS_DB_NAME: wordpress
+    volumes:
+      - wp_data:/var/www/html
+      - ./theme/jackwerth:/var/www/html/wp-content/themes/jackwerth
+      - ./plugin/jw-sermon-library:/var/www/html/wp-content/plugins/jw-sermon-library
+      - ./data:/var/www/html/wp-content/jw-data
+      - ./scripts:/var/www/html/wp-content/jw-scripts
+    entrypoint: ["tail","-f","/dev/null"]
+
+volumes:
+  db_data:
+  wp_data:

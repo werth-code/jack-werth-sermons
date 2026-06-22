@@ -1,0 +1,11 @@
+PASTE THE ACTUAL SERMON MANUSCRIPT / TRANSCRIPT / OUTLINE HERE.
+
+This is a template only — it is not attributed to any sermon until you rename
+the file to match one. Name this file by either:
+
+  • the archive.org identifier   e.g.  2019.02.03.ETitus3.15JackWerth.txt
+  • a sermon date                e.g.  2019-02-03.txt   or   2019-02-03-E.txt
+
+Then run:  docker exec jw-wpcli wp eval-file wp-content/jw-scripts/import-transcripts.php
+
+The text becomes the sermon's body and is immediately full-text searchable.
