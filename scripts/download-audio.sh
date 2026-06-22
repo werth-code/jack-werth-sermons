@@ -49,13 +49,9 @@ while IFS=$'\t' read -r url name; do
   [ -z "${url:-}" ] && continue
   i=$((i+1))
   out="$DEST/$name"
-  if [ -f "$out" ]; then
-    # Skip if the local size already matches the remote Content-Length.
-    remote="$(curl -sIL "$url" | awk 'tolower($0) ~ /content-length/ {print $2}' | tr -d '\r' | tail -1)"
-    local="$(wc -c < "$out" | tr -d ' ')"
-    if [ -n "$remote" ] && [ "$remote" = "$local" ]; then
-      skipped=$((skipped+1)); printf "[%d/%d] ✓ have   %s\n" "$i" "$total" "$name"; continue
-    fi
+  # Skip anything already downloaded (complete sermons are 20-30 MB; failed/partial are absent or tiny).
+  if [ -f "$out" ] && [ "$(wc -c < "$out" | tr -d ' ')" -gt 1000000 ]; then
+    skipped=$((skipped+1)); printf "[%d/%d] ✓ have   %s\n" "$i" "$total" "$name"; continue
   fi
   printf "[%d/%d] ↓ fetch  %s\n" "$i" "$total" "$name"
   curl -fL -C - --retry 3 --retry-delay 2 --limit-rate "$RATE" -o "$out" "$url" && done=$((done+1)) || echo "   ! failed: $name"
