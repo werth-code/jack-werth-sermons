@@ -203,9 +203,11 @@
   var playAll = document.querySelector('[data-playall-index]');
   if (playAll) playAll.addEventListener('click', function () {
     withIndex(function (all) {
-      var items = filterIndex(all, filters()).map(function (it) {
-        return { audio: it.audio, title: it.passage, sub: (it.service || '') + ' · ' + (it.date || '') };
-      });
+      var items = filterIndex(all, filters())
+        .slice().sort(function (a, b) { return (a.date || '').localeCompare(b.date || ''); })  // oldest → newest
+        .map(function (it) {
+          return { audio: it.audio, title: it.passage, sub: (it.service || '') + ' · ' + (it.date || '') };
+        });
       if (items.length && window.jwQueue) window.jwQueue(items, 0);
     });
   });
