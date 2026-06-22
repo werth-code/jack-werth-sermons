@@ -14,3 +14,7 @@ CREDENTIALS.local.md
 data/transcripts/*.txt
 data/transcripts/*.md
 !data/transcripts/_EXAMPLE*
+
+# Local Python env for transcription (do not commit)
+.venv-whisper/
+*.dylib

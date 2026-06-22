@@ -110,16 +110,24 @@ if ( $jw_verses ) :
 <section class="section" style="padding-top:0">
 	<div class="wrap sermon-body">
 		<div class="prose">
-			<?php if ( trim( get_the_content() ) ) : ?>
-				<?php the_content(); ?>
-			<?php else : ?>
-				<div class="transcript-empty">
-					<span class="kicker">Sermon Text</span>
-					<h3 style="margin-top:.3rem">The full text of this sermon will appear here.</h3>
-					<p style="color:var(--muted)">Sermon manuscripts and study notes are being added to the library.
-					For now, the passage is shown above — listen along and follow the exposition verse by verse.</p>
-				</div>
+			<?php if ( $arid ) : ?>
+			<div class="transcript-wrap" data-transcript-wrap hidden>
+				<div class="transcript-head"><span class="kicker">Follow Along</span><span class="transcript-note">Tap any word to jump there</span></div>
+				<div class="transcript" data-transcript="<?php echo esc_attr( $arid ); ?>"></div>
+			</div>
 			<?php endif; ?>
+			<div data-prose-fallback>
+				<?php if ( trim( get_the_content() ) ) : ?>
+					<?php the_content(); ?>
+				<?php else : ?>
+					<div class="transcript-empty">
+						<span class="kicker">Sermon Text</span>
+						<h3 style="margin-top:.3rem">The full text of this sermon will appear here.</h3>
+						<p style="color:var(--muted)">Sermon manuscripts and study notes are being added to the library.
+						For now, the passage is shown above — listen along and follow the exposition verse by verse.</p>
+					</div>
+				<?php endif; ?>
+			</div>
 
 			<!-- series prev/next -->
 			<?php if ( $prev || $next ) : ?>

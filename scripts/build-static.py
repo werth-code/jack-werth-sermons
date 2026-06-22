@@ -121,6 +121,15 @@ for a in assets:
     except Exception as e:
         print("  asset fail", a, e)
 
+# Follow-along transcripts (word-timed JSON) — served for the highlighting feature.
+tdir = os.path.join(HERE, "..", "data", "transcripts")
+if os.path.isdir(tdir):
+    tn = 0
+    for jf in __import__("glob").glob(os.path.join(tdir, "*.json")):
+        save("/wp-content/jw-data/transcripts/" + os.path.basename(jf), open(jf, encoding="utf-8").read())
+        tn += 1
+    print(f"Copied {tn} transcript(s) → docs/transcripts/")
+
 # GitHub Pages: custom domain (must be re-emitted every build since docs/ is wiped) + no Jekyll
 save("/CNAME", HOST + "\n")
 save("/.nojekyll", "")

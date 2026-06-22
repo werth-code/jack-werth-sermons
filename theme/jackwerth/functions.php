@@ -5,7 +5,7 @@
  */
 if ( ! defined( 'ABSPATH' ) ) { exit; }
 
-define( 'JW_THEME_VER', '1.1.5' );
+define( 'JW_THEME_VER', '1.1.6' );
 
 /* ------------------------------------------------------------------ setup */
 add_action( 'after_setup_theme', function () {
@@ -44,6 +44,7 @@ add_action( 'wp_enqueue_scripts', function () {
 
 	wp_enqueue_script( 'jw-app', get_stylesheet_directory_uri() . '/assets/js/app.js', [], JW_THEME_VER, true );
 	wp_enqueue_script( 'jw-player', get_stylesheet_directory_uri() . '/assets/js/player.js', [], JW_THEME_VER, true );
+	wp_enqueue_script( 'jw-transcript', get_stylesheet_directory_uri() . '/assets/js/transcript.js', [ 'jw-player' ], JW_THEME_VER, true );
 
 	wp_localize_script( 'jw-app', 'JW', [
 		'rest'    => esc_url_raw( rest_url( 'jw/v1/sermons' ) ),

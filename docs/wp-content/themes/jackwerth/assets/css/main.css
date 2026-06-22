@@ -287,6 +287,19 @@ strong{ font-weight:600; color:var(--ivory); }
 .scripture-foot{ margin-top:1.5rem; font-family:var(--mono); font-size:.6rem; letter-spacing:.14em;
   text-transform:uppercase; color:var(--faint); }
 
+/* follow-along transcript (synced word highlighting) */
+.transcript-wrap{ margin-bottom:2.5rem; }
+.transcript-head{ display:flex; align-items:baseline; justify-content:space-between; gap:1rem; margin-bottom:1rem; }
+.transcript-note{ font-family:var(--mono); font-size:.62rem; letter-spacing:.12em; text-transform:uppercase; color:var(--faint); }
+.transcript{ max-height:60vh; overflow-y:auto; font-family:var(--serif); font-size:1.14rem; line-height:2;
+  color:var(--ivory-dim); padding:1.6rem 1.8rem; background:var(--panel); border:1px solid var(--line);
+  border-left:3px solid var(--brass); border-radius:8px; box-shadow:var(--shadow-sm); }
+.transcript .tw{ cursor:pointer; border-radius:3px; padding:.02em 0; transition:color .12s, background .12s; }
+.transcript .tw:hover{ color:var(--ivory); }
+.transcript .tw.current{ background:rgba(201,162,75,.16); color:var(--ivory); box-shadow:0 0 0 2px rgba(201,162,75,.16); }
+.transcript::-webkit-scrollbar{ width:10px; }
+.transcript::-webkit-scrollbar-thumb{ background:var(--line); border-radius:10px; }
+
 /* aside */
 .sermon-aside{ position:sticky; top:96px; display:flex; flex-direction:column; gap:1.4rem; }
 .panel{ background:var(--panel); border:1px solid var(--line); border-radius:8px; padding:1.4rem; }
