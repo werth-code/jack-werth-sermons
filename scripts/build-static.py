@@ -13,7 +13,8 @@ Run:  python3 scripts/build-static.py
 import json, os, re, sys, urllib.parse, urllib.request, shutil
 
 LOCAL = "http://localhost:8091"
-BASE  = "https://werth-code.github.io/jack-werth-sermons"
+HOST  = "pastorjackwerth.org"
+BASE  = "https://" + HOST
 HERE  = os.path.dirname(os.path.abspath(__file__))
 OUT   = os.path.join(HERE, "..", "docs")
 UA    = {"User-Agent": "Mozilla/5.0 (static-export)"}
@@ -34,7 +35,7 @@ def rewrite(text):
     # Cover both plain and JSON-escaped-slash forms of the local URL.
     text = text.replace("http://localhost:8091", BASE)
     text = text.replace("http:\\/\\/localhost:8091", BASE.replace("/", "\\/"))
-    text = text.replace("localhost:8091", "werth-code.github.io/jack-werth-sermons")
+    text = text.replace("localhost:8091", HOST)
     return text
 
 JW_RE = re.compile(r"var JW = \{.*?\};", re.S)
@@ -113,6 +114,7 @@ for a in assets:
     except Exception as e:
         print("  asset fail", a, e)
 
-# GitHub Pages: don't run Jekyll
+# GitHub Pages: custom domain (must be re-emitted every build since docs/ is wiped) + no Jekyll
+save("/CNAME", HOST + "\n")
 save("/.nojekyll", "")
 print("Done →", os.path.relpath(OUT))
