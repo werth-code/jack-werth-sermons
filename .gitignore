@@ -18,3 +18,8 @@ data/transcripts/*.md
 # Local Python env for transcription (do not commit)
 .venv-whisper/
 *.dylib
+
+# Auto-publish job runtime files
+auto-publish*.log
+.auto-publish.lock
+.transcripts-published
