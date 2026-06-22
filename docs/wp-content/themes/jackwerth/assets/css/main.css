@@ -273,6 +273,20 @@ strong{ font-weight:600; color:var(--ivory); }
   background:rgba(201,162,75,.03); }
 .transcript-empty .kicker{ margin-bottom:1rem; }
 
+/* scripture passage (KJV, shown inline on the sermon page) */
+.scripture{ background:linear-gradient(160deg,var(--panel),var(--ink)); border:1px solid var(--line);
+  border-left:3px solid var(--brass); border-radius:8px; padding:2rem 2.2rem; box-shadow:var(--shadow-sm); }
+.scripture-head{ display:flex; align-items:baseline; justify-content:space-between; gap:1rem; flex-wrap:wrap;
+  margin-bottom:1.3rem; padding-bottom:1rem; border-bottom:1px solid var(--line-soft); }
+.scripture-ref{ font-family:var(--disp); font-size:1.2rem; color:var(--ivory); }
+.scripture-ref span{ color:var(--muted); font-size:.72rem; font-family:var(--mono); letter-spacing:.12em; }
+.scripture-body{ font-family:var(--serif); font-size:1.2rem; line-height:1.95; color:var(--ivory-dim); }
+.scripture-body sup{ font-family:var(--mono); font-size:.58rem; color:var(--brass); margin-right:.1em; top:-.7em; font-weight:500; }
+.verse-ch{ display:block; font-family:var(--mono); font-size:.64rem; letter-spacing:.22em; text-transform:uppercase;
+  color:var(--brass); margin:1.3rem 0 .4rem; }
+.scripture-foot{ margin-top:1.5rem; font-family:var(--mono); font-size:.6rem; letter-spacing:.14em;
+  text-transform:uppercase; color:var(--faint); }
+
 /* aside */
 .sermon-aside{ position:sticky; top:96px; display:flex; flex-direction:column; gap:1.4rem; }
 .panel{ background:var(--panel); border:1px solid var(--line); border-radius:8px; padding:1.4rem; }

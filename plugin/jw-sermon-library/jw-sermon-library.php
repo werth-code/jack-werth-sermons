@@ -133,6 +133,49 @@ function jw_audio_url( int $post_id ): string {
 	return (string) get_post_meta( $post_id, '_jw_audio_mp3', true );
 }
 
+/* Look up KJV verse text for a passage (public-domain text bundled in /bible).
+   Handles single verses ("17"), ranges ("17-18"), open refs ("9a"),
+   cross-chapter spans ("17-3:5"), and whole chapters (empty $verses). */
+function jw_passage_verses( string $book, $chapter, $verses ): array {
+	$slug = sanitize_title( $book );
+	$file = plugin_dir_path( __FILE__ ) . 'bible/' . $slug . '.json';
+	if ( ! $book || ! is_readable( $file ) ) return [];
+	static $cache = [];
+	if ( ! isset( $cache[ $slug ] ) ) $cache[ $slug ] = json_decode( file_get_contents( $file ), true );
+	$data = $cache[ $slug ];
+	if ( empty( $data['chapters'] ) ) return [];
+
+	$ch  = max( 1, (int) $chapter );
+	$out = [];
+	$add = function ( $c, $v ) use ( $data, &$out ) {
+		$t = $data['chapters'][ $c - 1 ][ $v - 1 ] ?? null;
+		if ( $t !== null && $t !== '' ) $out[] = [ 'c' => $c, 'v' => $v, 'text' => $t ];
+	};
+	$verses = trim( (string) $verses );
+
+	if ( $verses === '' ) {                                   // whole chapter
+		$n = count( $data['chapters'][ $ch - 1 ] ?? [] );
+		for ( $v = 1; $v <= $n; $v++ ) $add( $ch, $v );
+		return $out;
+	}
+	if ( strpos( $verses, '-' ) === false ) {                 // single verse ("17", "9a")
+		$add( $ch, (int) $verses );
+		return $out;
+	}
+	list( $a, $b ) = array_map( 'trim', explode( '-', $verses, 2 ) );
+	$startV = (int) $a;
+	if ( preg_match( '/[.:]/', $b ) ) {                       // cross-chapter span "17-3:5" or "17-3.5"
+		$p = preg_split( '/[.:]/', $b ); $endCh = (int) $p[0]; $endV = (int) $p[1];
+	} else { $endCh = $ch; $endV = (int) $b; }
+	for ( $c = $ch; $c <= $endCh; $c++ ) {
+		$cv   = $data['chapters'][ $c - 1 ] ?? [];
+		$from = ( $c === $ch )    ? $startV : 1;
+		$to   = ( $c === $endCh ) ? $endV   : count( $cv );
+		for ( $v = $from; $v <= $to; $v++ ) $add( $c, $v );
+	}
+	return $out;
+}
+
 /* -------------------------------------------------------------------------
  * Faceted query — shared by the archive page (no-JS) and the REST endpoint.
  * Filters: book (slug), year, service (slug), q (keyword across title+content+passage).

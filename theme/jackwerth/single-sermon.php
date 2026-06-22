@@ -82,6 +82,31 @@ while ( have_posts() ) : the_post();
 	</div>
 </section>
 
+<?php
+$jw_verses = jw_passage_verses( $book, jw_meta( 'chapter' ), jw_meta( 'verses' ) );
+if ( $jw_verses ) :
+	$jw_multich = $jw_verses[0]['c'] !== $jw_verses[ count( $jw_verses ) - 1 ]['c'];
+	$jw_lastch  = 0;
+?>
+<section class="section" style="padding-top:0">
+	<div class="wrap" style="max-width:820px">
+		<div class="scripture">
+			<div class="scripture-head">
+				<span class="kicker">The Passage</span>
+				<span class="scripture-ref"><?php echo esc_html( $passage ); ?> <span>· KJV</span></span>
+			</div>
+			<div class="scripture-body">
+				<?php foreach ( $jw_verses as $vv ) :
+					if ( $jw_multich && $vv['c'] !== $jw_lastch ) { echo '<span class="verse-ch">Chapter ' . esc_html( $vv['c'] ) . '</span>'; $jw_lastch = $vv['c']; } ?>
+					<span class="verse"><sup><?php echo esc_html( $vv['v'] ); ?></sup> <?php echo esc_html( $vv['text'] ); ?> </span>
+				<?php endforeach; ?>
+			</div>
+			<div class="scripture-foot">King James Version (Public Domain)</div>
+		</div>
+	</div>
+</section>
+<?php endif; ?>
+
 <section class="section" style="padding-top:0">
 	<div class="wrap sermon-body">
 		<div class="prose">
@@ -92,12 +117,7 @@ while ( have_posts() ) : the_post();
 					<span class="kicker">Sermon Text</span>
 					<h3 style="margin-top:.3rem">The full text of this sermon will appear here.</h3>
 					<p style="color:var(--muted)">Sermon manuscripts and study notes are being added to the library.
-					In the meantime, listen above, open the passage alongside, and follow the exposition verse by verse.</p>
-					<?php if ( $book && jw_meta( 'passage' ) ) : ?>
-						<a class="btn btn--ghost" target="_blank" rel="noopener"
-						   href="https://www.biblegateway.com/passage/?version=ESV&search=<?php echo rawurlencode( jw_meta( 'passage' ) ); ?>">
-						   Read <?php echo esc_html( $passage ); ?> →</a>
-					<?php endif; ?>
+					For now, the passage is shown above — listen along and follow the exposition verse by verse.</p>
 				</div>
 			<?php endif; ?>
 
@@ -139,7 +159,7 @@ while ( have_posts() ) : the_post();
 					<?php endif; ?>
 					<?php if ( $book && jw_meta( 'passage' ) ) : ?>
 						<a class="btn btn--ghost" target="_blank" rel="noopener"
-						   href="https://www.biblegateway.com/passage/?version=ESV&search=<?php echo rawurlencode( jw_meta( 'passage' ) ); ?>">Read the Passage</a>
+						   href="https://www.biblegateway.com/passage/?version=ESV&search=<?php echo rawurlencode( jw_meta( 'passage' ) ); ?>">Compare Translations ↗</a>
 					<?php endif; ?>
 					<?php if ( jw_meta( 'details_url' ) ) : ?>
 						<a class="btn btn--ghost" target="_blank" rel="noopener" href="<?php echo esc_url( jw_meta( 'details_url' ) ); ?>">View on archive.org</a>
