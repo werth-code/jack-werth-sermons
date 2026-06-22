@@ -93,11 +93,14 @@
     var heartBtn = sid
       ? '<button class="heart" data-heart data-sermon="' + esc(sid) + '" data-passage="' + esc(it.passage || it.title) + '" aria-label="Save to favorites" aria-pressed="false"><svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg></button>'
       : '';
+    var addplBtn = sid
+      ? '<button class="addpl" data-addplaylist data-sermon="' + esc(sid) + '" data-passage="' + esc(it.passage || it.title) + '" aria-label="Add to playlist"><svg viewBox="0 0 24 24"><path d="M4 6h11M4 12h7M4 18h7M16 15v6M13 18h6"/></svg></button>'
+      : '';
     return '<article class="scard reveal in">' +
         '<div class="top">' + bookTag + '<span class="date">' + esc(d) + '</span></div>' +
         '<h3 class="passage"><a href="' + esc(it.permalink) + '">' + esc(it.passage || it.title) + '</a></h3>' +
         (it.excerpt ? '<p class="excerpt">' + esc(it.excerpt) + '</p>' : '') +
-        '<div class="foot"><span class="svc">' + esc(it.service || '') + '</span><div class="card-actions">' + heartBtn + playBtn + '</div></div>' +
+        '<div class="foot"><span class="svc">' + esc(it.service || '') + '</span><div class="card-actions">' + heartBtn + addplBtn + playBtn + '</div></div>' +
       '</article>';
   }
 

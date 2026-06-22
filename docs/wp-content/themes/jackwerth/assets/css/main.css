@@ -507,3 +507,33 @@ strong{ font-weight:600; color:var(--ivory); }
 .lib-gate{ background:linear-gradient(160deg,var(--panel),var(--ink)); border:1px solid var(--line);
   border-radius:10px; padding:2.5rem; text-align:center; }
 .lib-gate .btn{ margin-top:1.2rem; }
+.jw-muted{ color:var(--muted); font-size:.92rem; }
+
+/* add-to-playlist button (sits with the heart/play in card actions) */
+.addpl{ background:none; border:1px solid var(--line); color:var(--muted); width:46px; height:46px;
+  border-radius:50%; display:grid; place-items:center; transition:.22s; flex:none; }
+.addpl svg{ width:18px; height:18px; fill:none; stroke:currentColor; stroke-width:1.7; }
+.addpl:hover{ color:var(--brass); border-color:var(--brass); transform:scale(1.06); }
+
+/* add-to-playlist modal list */
+.pl-list{ display:flex; flex-direction:column; gap:.5rem; margin:.4rem 0 1.4rem; max-height:38vh; overflow:auto; }
+.pl-pick{ text-align:left; background:var(--char); border:1px solid var(--line); color:var(--ivory);
+  border-radius:var(--radius); padding:.8em 1em; font-family:var(--serif); font-size:1rem; transition:.2s; }
+.pl-pick:hover{ border-color:var(--brass); color:var(--brass); }
+
+/* library playlist cards */
+.pl-card{ background:var(--panel); border:1px solid var(--line-soft); border-radius:8px; padding:1.4rem 1.6rem; margin-bottom:1.1rem; }
+.pl-head{ display:flex; align-items:flex-start; justify-content:space-between; gap:1rem; flex-wrap:wrap; }
+.pl-head h3{ margin:.3rem 0 .2rem; }
+.pl-count{ font-family:var(--mono); font-size:.66rem; letter-spacing:.12em; text-transform:uppercase; color:var(--muted); }
+.pl-actions{ display:flex; align-items:center; gap:.7rem; }
+.pl-del{ background:none; border:0; font-family:var(--mono); font-size:.64rem; letter-spacing:.14em;
+  text-transform:uppercase; color:var(--faint); }
+.pl-del:hover{ color:var(--oxblood); }
+.pl-items{ margin-top:1.1rem; border-top:1px solid var(--line-soft); padding-top:.6rem; }
+.pl-item{ display:flex; align-items:center; justify-content:space-between; gap:1rem; padding:.5rem 0; border-bottom:1px solid var(--line-soft); }
+.pl-item:last-child{ border-bottom:0; }
+.pl-item a{ font-family:var(--disp); font-size:1.05rem; color:var(--ivory-dim); }
+.pl-item a:hover{ color:var(--brass); }
+.pl-rm{ background:none; border:0; color:var(--faint); font-size:1.1rem; line-height:1; padding:0 .3rem; }
+.pl-rm:hover{ color:var(--oxblood); }

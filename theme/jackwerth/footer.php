@@ -33,8 +33,8 @@
 			</div>
 		</div>
 		<div class="foot-bottom">
-			<span>&copy; <?php echo esc_html( date( 'Y' ) ); ?> <?php echo esc_html( jw_brand( 'name' ) ); ?>. Soli Deo Gloria.</span>
-			<span><?php echo esc_html( number_format_i18n( jw_total_sermons() ) ); ?> sermons · streamed from archive.org</span>
+			<span>In loving memory of Pastor Jack Werth &middot; 1953&ndash;2023</span>
+			<span><?php echo esc_html( number_format_i18n( jw_total_sermons() ) ); ?> sermons &middot; Soli Deo Gloria</span>
 		</div>
 	</div>
 </footer>

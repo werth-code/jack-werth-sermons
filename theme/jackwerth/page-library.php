@@ -36,8 +36,8 @@ get_header();
 			</div>
 
 			<div class="lib-section">
-				<div class="sec-head"><div><span class="kicker">Coming Next</span><h2>Playlists</h2></div></div>
-				<p class="lede">Playlists and cross-device resume are being added next — your favorites are live now.</p>
+				<div class="sec-head"><div><span class="kicker">Collections</span><h2>Playlists</h2></div></div>
+				<div data-playlists></div>
 			</div>
 		</div>
 

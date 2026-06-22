@@ -178,7 +178,107 @@
       else favGrid.innerHTML = rows.map(function (row) { return byId[row.sermon_id] ? cardHTML(byId[row.sermon_id]) : ''; }).join('');
     }
     favs = new Set(rows.map(function (x) { return x.sermon_id; }));
+    renderPlaylists(byId);
   }
+
+  // ------------------------------------------------------------------ playlists
+  var plTarget = null, plModal = null;
+
+  async function listPlaylists() {
+    var r = await sb.from('playlists').select('id, name, created_at').order('created_at', { ascending: true });
+    return r.data || [];
+  }
+  async function createPlaylist(name) {
+    var r = await sb.from('playlists').insert({ user_id: user.id, name: name }).select().single();
+    if (r.error) { toast(r.error.message, false); return null; }
+    return r.data;
+  }
+  async function addToPlaylist(plId, sermonId, passage) {
+    var c = await sb.from('playlist_items').select('position').eq('playlist_id', plId).order('position', { ascending: false }).limit(1);
+    var pos = ((c.data && c.data[0]) ? c.data[0].position : 0) + 1;
+    var r = await sb.from('playlist_items').insert({ playlist_id: plId, sermon_id: sermonId, passage: passage, position: pos });
+    if (r.error) { toast(r.error.message, false); return false; }
+    return true;
+  }
+
+  function buildPlModal() {
+    plModal = h(
+      '<div class="jw-modal" data-plmodal hidden>' +
+        '<div class="jw-modal-card">' +
+          '<button class="jw-modal-x" data-x aria-label="Close">×</button>' +
+          '<div class="kicker">Add to Playlist</div>' +
+          '<h3 data-plpassage></h3>' +
+          '<div class="pl-list" data-pllist></div>' +
+          '<form data-plnew><label>New playlist<input name="plname" placeholder="e.g. Sunday Mornings" maxlength="80" autocomplete="off"></label><button class="btn" type="submit">Create &amp; add</button></form>' +
+        '</div>' +
+      '</div>');
+    document.body.appendChild(plModal);
+    plModal.addEventListener('click', function (e) { if (e.target === plModal || e.target.closest('[data-x]')) closePl(); });
+    plModal.querySelector('[data-plnew]').addEventListener('submit', async function (e) {
+      e.preventDefault(); var name = e.target.plname.value.trim(); if (!name) return;
+      var pl = await createPlaylist(name);
+      if (pl && await addToPlaylist(pl.id, plTarget.id, plTarget.passage)) { toast('Added to "' + name + '".'); closePl(); renderLibrary(); }
+    });
+  }
+  async function openPl(sermonId, passage) {
+    if (!user) { openAuth('signin'); toast('Sign in to build playlists.'); return; }
+    if (!plModal) buildPlModal();
+    plTarget = { id: sermonId, passage: passage };
+    plModal.querySelector('[data-plpassage]').textContent = passage;
+    plModal.querySelector('[data-plnew]').reset();
+    var list = plModal.querySelector('[data-pllist]');
+    list.innerHTML = '<p class="jw-muted">Loading…</p>';
+    plModal.hidden = false; document.body.style.overflow = 'hidden';
+    var pls = await listPlaylists();
+    list.innerHTML = pls.length ? '' : '<p class="jw-muted">No playlists yet — name one below.</p>';
+    pls.forEach(function (p) {
+      var b = h('<button class="pl-pick" type="button">' + esc(p.name) + '</button>');
+      b.addEventListener('click', async function () { if (await addToPlaylist(p.id, plTarget.id, plTarget.passage)) { toast('Added to "' + p.name + '".'); closePl(); renderLibrary(); } });
+      list.appendChild(b);
+    });
+  }
+  function closePl() { if (plModal) plModal.hidden = true; document.body.style.overflow = ''; }
+  document.addEventListener('click', function (e) {
+    var b = e.target.closest('[data-addplaylist]');
+    if (b) { e.preventDefault(); openPl(b.getAttribute('data-sermon'), b.getAttribute('data-passage')); }
+  });
+
+  async function renderPlaylists(byId) {
+    var wrap = document.querySelector('[data-playlists]');
+    if (!wrap) return;
+    var pls = await listPlaylists();
+    if (!pls.length) { wrap.innerHTML = '<p class="lede">No playlists yet. Tap the ＋ on any sermon to start one.</p>'; return; }
+    wrap.innerHTML = '';
+    for (var i = 0; i < pls.length; i++) {
+      var p = pls[i];
+      var it = await sb.from('playlist_items').select('id, sermon_id, passage, position').eq('playlist_id', p.id).order('position', { ascending: true });
+      var items = it.data || [];
+      var card = h('<div class="pl-card"></div>');
+      card.innerHTML =
+        '<div class="pl-head"><div><span class="kicker">Playlist</span><h3>' + esc(p.name) + '</h3>' +
+          '<span class="pl-count">' + items.length + ' sermon' + (items.length === 1 ? '' : 's') + '</span></div>' +
+          '<div class="pl-actions">' +
+            (items.length ? '<button class="btn btn--ghost" data-plplay="' + esc(p.id) + '"><svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M8 5v14l11-7z"/></svg> Play All</button>' : '') +
+            '<button class="pl-del" data-pldel="' + esc(p.id) + '">Delete</button>' +
+          '</div></div>' +
+        '<div class="pl-items">' + (items.length ? items.map(function (x) {
+          return '<div class="pl-item"><a href="' + (byId[x.sermon_id] ? esc(byId[x.sermon_id].permalink) : '#') + '">' + esc(x.passage) + '</a>' +
+            '<button class="pl-rm" data-plrm="' + esc(x.id) + '" aria-label="Remove">×</button></div>';
+        }).join('') : '<p class="jw-muted" style="padding:.4rem 0">Empty — add sermons with the ＋ button.</p>') + '</div>';
+      wrap.appendChild(card);
+    }
+  }
+  async function playPlaylist(plId) {
+    var idx = await loadIndex(); var byId = {}; idx.forEach(function (it) { byId[it.id] = it; });
+    var it = await sb.from('playlist_items').select('sermon_id, passage, position').eq('playlist_id', plId).order('position', { ascending: true });
+    var items = (it.data || []).map(function (x) { var s = byId[x.sermon_id]; return s ? { audio: s.audio, title: s.passage, sub: (s.service || '') + ' · ' + (s.date || '') } : null; }).filter(Boolean);
+    if (items.length && window.jwQueue) window.jwQueue(items, 0); else toast('This playlist is empty.', false);
+  }
+  document.addEventListener('click', async function (e) {
+    var play = e.target.closest('[data-plplay]'); if (play) { playPlaylist(play.getAttribute('data-plplay')); return; }
+    var del = e.target.closest('[data-pldel]'); if (del) { if (confirm('Delete this playlist?')) { await sb.from('playlists').delete().eq('id', del.getAttribute('data-pldel')); renderLibrary(); } return; }
+    var rm = e.target.closest('[data-plrm]'); if (rm) { await sb.from('playlist_items').delete().eq('id', rm.getAttribute('data-plrm')); renderLibrary(); return; }
+  });
 
   // reflect heart state on cards inserted later (live search, Play All, related)
   var _rt;

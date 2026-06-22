@@ -29,6 +29,10 @@ $arid    = jw_meta( 'archive_id' );
 				data-passage="<?php echo esc_attr( $passage ); ?>" aria-label="Save to favorites" aria-pressed="false">
 				<svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
 			</button>
+			<button class="addpl" data-addplaylist data-sermon="<?php echo esc_attr( $arid ); ?>"
+				data-passage="<?php echo esc_attr( $passage ); ?>" aria-label="Add to playlist">
+				<svg viewBox="0 0 24 24"><path d="M4 6h11M4 12h7M4 18h7M16 15v6M13 18h6"/></svg>
+			</button>
 			<?php endif; ?>
 			<?php if ( $audio ) : ?>
 			<button class="play" aria-label="Play <?php echo esc_attr( $passage ); ?>"
