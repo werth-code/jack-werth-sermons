@@ -50,7 +50,14 @@ def slugify(s):
     return re.sub(r"^-|-$", "", re.sub(r"[^a-z0-9]+", "-", (s or "").lower()))
 
 print("Collecting URLs…")
-pages = ["/", "/sermons/", "/books/", "/about/", "/for-pastors/", "/contact/", "/store/"]
+# Home + the sermon archive + EVERY WP page (pulled from the page sitemap, so any page
+# added later — like /library/ — is included automatically).
+pages = ["/", "/sermons/"]
+psm = get(f"{LOCAL}/wp-sitemap-posts-page-1.xml")
+for u in re.findall(r"<loc>([^<]+)</loc>", psm):
+    p = urllib.parse.urlparse(u).path
+    if p not in pages:
+        pages.append(p)
 
 # sermon permalinks from the sitemap
 sm = get(f"{LOCAL}/wp-sitemap-posts-sermon-1.xml")
