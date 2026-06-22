@@ -280,7 +280,16 @@ strong{ font-weight:600; color:var(--ivory); }
   margin-bottom:1.3rem; padding-bottom:1rem; border-bottom:1px solid var(--line-soft); }
 .scripture-ref{ font-family:var(--disp); font-size:1.2rem; color:var(--ivory); }
 .scripture-ref span{ color:var(--muted); font-size:.72rem; font-family:var(--mono); letter-spacing:.12em; }
-.scripture-body{ font-family:var(--serif); font-size:1.2rem; line-height:1.95; color:var(--ivory-dim); }
+.scripture-body{ font-family:var(--serif); font-size:calc(1.2rem * var(--jw-read-size, 1)); line-height:1.95; color:var(--ivory-dim); }
+.scripture-head-right{ display:flex; align-items:center; gap:1rem; flex-wrap:wrap; }
+/* reading text-size control (accessibility) */
+.text-size{ display:inline-flex; align-items:center; gap:.35rem; }
+.ts-btn{ background:none; border:1px solid var(--line); color:var(--muted); border-radius:var(--radius);
+  width:32px; height:32px; display:grid; place-items:center; font-family:var(--disp); line-height:1;
+  font-size:.82rem; transition:.2s; }
+.ts-btn.ts-big{ font-size:1.18rem; }
+.ts-btn:hover{ color:var(--brass); border-color:var(--brass); }
+.ts-btn:active{ transform:scale(.92); }
 .scripture-body sup{ font-family:var(--mono); font-size:.58rem; color:var(--brass); margin-right:.1em; top:-.7em; font-weight:500; }
 .verse-ch{ display:block; font-family:var(--mono); font-size:.64rem; letter-spacing:.22em; text-transform:uppercase;
   color:var(--brass); margin:1.3rem 0 .4rem; }
@@ -291,7 +300,8 @@ strong{ font-weight:600; color:var(--ivory); }
 .transcript-wrap{ margin-bottom:2.5rem; }
 .transcript-head{ display:flex; align-items:baseline; justify-content:space-between; gap:1rem; margin-bottom:1rem; }
 .transcript-note{ font-family:var(--mono); font-size:.62rem; letter-spacing:.12em; text-transform:uppercase; color:var(--faint); }
-.transcript{ max-height:60vh; overflow-y:auto; font-family:var(--serif); font-size:1.14rem; line-height:2;
+.transcript-tools{ display:flex; align-items:center; gap:1rem; flex-wrap:wrap; }
+.transcript{ max-height:60vh; overflow-y:auto; font-family:var(--serif); font-size:calc(1.14rem * var(--jw-read-size, 1)); line-height:2;
   color:var(--ivory-dim); padding:1.6rem 1.8rem; background:var(--panel); border:1px solid var(--line);
   border-left:3px solid var(--brass); border-radius:8px; box-shadow:var(--shadow-sm); }
 .transcript .tw{ cursor:pointer; border-radius:3px; padding:.02em 0; transition:color .12s, background .12s; }

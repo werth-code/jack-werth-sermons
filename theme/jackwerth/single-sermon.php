@@ -93,7 +93,13 @@ if ( $jw_verses ) :
 		<div class="scripture">
 			<div class="scripture-head">
 				<span class="kicker">The Passage</span>
-				<span class="scripture-ref"><?php echo esc_html( $passage ); ?> <span>· KJV</span></span>
+				<div class="scripture-head-right">
+					<div class="text-size" role="group" aria-label="Adjust reading text size">
+						<button class="ts-btn" data-ts-dec type="button" aria-label="Smaller text">A</button>
+						<button class="ts-btn ts-big" data-ts-inc type="button" aria-label="Larger text">A</button>
+					</div>
+					<span class="scripture-ref"><?php echo esc_html( $passage ); ?> <span>· KJV</span></span>
+				</div>
 			</div>
 			<div class="scripture-body">
 				<?php foreach ( $jw_verses as $vv ) :
@@ -112,7 +118,16 @@ if ( $jw_verses ) :
 		<div class="prose">
 			<?php if ( $arid ) : ?>
 			<div class="transcript-wrap" data-transcript-wrap hidden>
-				<div class="transcript-head"><span class="kicker">Follow Along</span><span class="transcript-note">Tap any word to jump there</span></div>
+				<div class="transcript-head">
+					<span class="kicker">Follow Along</span>
+					<div class="transcript-tools">
+						<span class="transcript-note">Tap a word to jump</span>
+						<div class="text-size" role="group" aria-label="Adjust reading text size">
+							<button class="ts-btn" data-ts-dec type="button" aria-label="Smaller text">A</button>
+							<button class="ts-btn ts-big" data-ts-inc type="button" aria-label="Larger text">A</button>
+						</div>
+					</div>
+				</div>
 				<div class="transcript" data-transcript="<?php echo esc_attr( $arid ); ?>"></div>
 			</div>
 			<?php endif; ?>

@@ -64,22 +64,32 @@ def main():
     print(f"Loading {model_name} (int8, CPU)… (first run downloads the model)")
     model = WhisperModel(model_name, device="cpu", compute_type="int8")
 
+    done = 0
     for n, (mp3, c) in enumerate(jobs, 1):
         t0 = time.time()
         print(f"[{n}/{len(jobs)}] {c['passage']}  ({c['title']})")
-        segments, info = model.transcribe(mp3, language="en", word_timestamps=True,
-                                          vad_filter=True, beam_size=1)
-        words, parts = [], []
-        for seg in segments:
-            parts.append(seg.text)
-            for w in (seg.words or []):
-                words.append({"w": w.word, "s": round(w.start, 2), "e": round(w.end, 2)})
-            sys.stdout.write(f"\r   …{seg.end:.0f}/{info.duration:.0f}s"); sys.stdout.flush()
-        json.dump({"id": c["identifier"], "passage": c["passage"], "text": "".join(parts).strip(),
-                   "words": words, "model": model_name, "duration": round(info.duration, 1)},
-                  open(os.path.join(OUT, c["identifier"] + ".json"), "w"), ensure_ascii=False)
-        rt = info.duration / max(1, time.time() - t0)
-        print(f"\r   {len(words)} words, {info.duration:.0f}s audio in {time.time()-t0:.0f}s ({rt:.1f}x realtime)   ")
+        try:
+            segments, info = model.transcribe(mp3, language="en", word_timestamps=True,
+                                              vad_filter=True, beam_size=1)
+            words, parts = [], []
+            for seg in segments:
+                parts.append(seg.text)
+                for w in (seg.words or []):
+                    words.append({"w": w.word, "s": round(w.start, 2), "e": round(w.end, 2)})
+                sys.stdout.write(f"\r   …{seg.end:.0f}/{info.duration:.0f}s"); sys.stdout.flush()
+            # write atomically (tmp then rename) so an interrupted run never leaves a half file
+            tmp = os.path.join(OUT, c["identifier"] + ".json.tmp")
+            json.dump({"id": c["identifier"], "passage": c["passage"], "text": "".join(parts).strip(),
+                       "words": words, "model": model_name, "duration": round(info.duration, 1)},
+                      open(tmp, "w"), ensure_ascii=False)
+            os.replace(tmp, os.path.join(OUT, c["identifier"] + ".json"))
+            rt = info.duration / max(1, time.time() - t0)
+            done += 1
+            print(f"\r   {len(words)} words, {info.duration:.0f}s audio in {time.time()-t0:.0f}s ({rt:.1f}x realtime)   ")
+        except Exception as e:
+            print(f"\r   ! failed: {e}                              ")
+            continue
+    print(f"\nBatch finished: {done}/{len(jobs)} transcribed this run. Re-run with --all to resume the rest.")
 
 if __name__ == "__main__":
     main()

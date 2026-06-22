@@ -2,6 +2,23 @@
    word highlighting to the player. Tap any word to seek there. */
 (function () {
   'use strict';
+
+  // ---- reading text-size control (scales transcript + Scripture; saved across visits) ----
+  (function () {
+    var KEY = 'jw-read-size', MIN = 0.8, MAX = 2.0, STEP = 0.15;
+    function getv() { var v = parseFloat(localStorage.getItem(KEY)); return (v >= MIN && v <= MAX) ? v : 1; }
+    function applyv(v) { document.documentElement.style.setProperty('--jw-read-size', v); }
+    applyv(getv());
+    document.addEventListener('click', function (e) {
+      var inc = e.target.closest('[data-ts-inc]'), dec = e.target.closest('[data-ts-dec]');
+      if (!inc && !dec) return;
+      var v = getv(); v = inc ? Math.min(MAX, v + STEP) : Math.max(MIN, v - STEP);
+      v = Math.round(v * 100) / 100;
+      try { localStorage.setItem(KEY, v); } catch (err) {}
+      applyv(v);
+    });
+  })();
+
   var panel = document.querySelector('[data-transcript]');
   if (!panel) return;
   var id   = panel.getAttribute('data-transcript');
