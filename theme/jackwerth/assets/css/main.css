@@ -447,6 +447,18 @@ strong{ font-weight:600; color:var(--ivory); }
   font-family:var(--mono); font-size:.72rem; letter-spacing:.1em; text-transform:uppercase; color:var(--ivory-dim);
   padding:.6rem; border-radius:var(--radius); }
 .acct-menu a:hover, .acct-menu button:hover{ background:var(--panel-2); color:var(--brass); }
+/* mobile: the avatar lives in the collapsed nav (left-aligned), so drop the menu inline
+   instead of absolutely-positioned (which ran off the left edge of the screen). */
+@media (max-width:720px){
+  [data-account]{ width:100%; }
+  .acct{ width:100%; }
+  .acct-btn{ width:auto; height:auto; border:0; background:none; color:var(--brass);
+    font-size:0; padding:.9rem 0; }
+  .acct-btn::after{ content:"Account ▾"; font-family:var(--mono); font-size:.76rem;
+    letter-spacing:.14em; text-transform:uppercase; }
+  .acct-menu{ position:static; min-width:0; margin:0 0 .5rem; box-shadow:none; background:transparent; border:0; padding:0; }
+  .acct-menu .acct-name{ display:none; }
+}
 
 /* modal */
 .jw-modal{ position:fixed; inset:0; z-index:100; display:grid; place-items:center; padding:1.2rem;
