@@ -109,11 +109,15 @@ add_action( 'init', function () {
 		'_jw_audio_local' => 'string', '_jw_archive_id' => 'string', '_jw_details_url' => 'string',
 		'_jw_duration' => 'string', '_jw_product_id' => 'integer', '_jw_has_transcript' => 'boolean',
 	];
+	// URL fields MUST use esc_url_raw — sanitize_text_field strips %-encoded octets
+	// (e.g. the %20 spaces in archive.org filenames), which would 404 the audio.
+	$url_keys = [ '_jw_audio_mp3', '_jw_audio_ogg', '_jw_details_url' ];
 	foreach ( $meta as $key => $type ) {
 		register_post_meta( 'sermon', $key, [
 			'type' => $type, 'single' => true, 'show_in_rest' => true,
 			'sanitize_callback' => $type === 'integer' ? 'absint'
-				: ( $type === 'boolean' ? 'rest_sanitize_boolean' : 'sanitize_text_field' ),
+				: ( $type === 'boolean' ? 'rest_sanitize_boolean'
+				: ( in_array( $key, $url_keys, true ) ? 'esc_url_raw' : 'sanitize_text_field' ) ),
 			'auth_callback' => fn() => current_user_can( 'edit_posts' ),
 		] );
 	}
