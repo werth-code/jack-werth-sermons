@@ -3,8 +3,16 @@
 if ( ! defined( 'ABSPATH' ) ) exit;
 get_header();
 
-$latest = new WP_Query( [ 'post_type' => 'sermon', 'posts_per_page' => 1, 'meta_key' => '_jw_date', 'orderby' => 'meta_value', 'order' => 'DESC' ] );
-$feat   = $latest->have_posts() ? $latest->posts[0] : null;
+// Hero feature card: a hand-picked sermon flagged _jw_featured if one exists,
+// otherwise fall back to the most recent sermon.
+$featured_q = new WP_Query( [ 'post_type' => 'sermon', 'posts_per_page' => 1, 'no_found_rows' => true,
+	'meta_query' => [ [ 'key' => '_jw_featured', 'value' => '1' ] ] ] );
+$is_featured = $featured_q->have_posts();
+if ( ! $is_featured ) {
+	$featured_q = new WP_Query( [ 'post_type' => 'sermon', 'posts_per_page' => 1, 'no_found_rows' => true,
+		'meta_key' => '_jw_date', 'orderby' => 'meta_value', 'order' => 'DESC' ] );
+}
+$feat = $featured_q->have_posts() ? $featured_q->posts[0] : null;
 $books  = jw_books_with_counts();
 $nbooks = count( $books['OT'] ) + count( $books['NT'] );
 $years  = jw_sermon_years();
@@ -38,7 +46,7 @@ $span   = $years ? ( end( $years ) . '–' . reset( $years ) ) : '';
 		<?php if ( $feat ) : setup_postdata( $GLOBALS['post'] = $feat ); // phpcs:ignore
 			$audio = jw_audio_url( $feat->ID ); ?>
 		<aside class="feature-card reveal" data-delay="2">
-			<span class="kicker">Latest Sermon</span>
+			<span class="kicker"><?php echo $is_featured ? 'Featured Sermon' : 'Latest Sermon'; ?></span>
 			<div class="passage"><?php echo esc_html( jw_meta( 'passage', $feat->ID ) ?: get_the_title( $feat ) ); ?></div>
 			<div class="meta"><?php echo esc_html( jw_meta( 'service', $feat->ID ) ); ?> &middot; <?php echo esc_html( jw_pretty_date( $feat->ID ) ); ?></div>
 			<div class="player-feature" style="padding:0;border:0;box-shadow:none;background:none;gap:1rem">
